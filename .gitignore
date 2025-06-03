@@ -27,3 +27,6 @@
 *.pidb.meta
 *.pdb.meta
 *.mdb.meta
+
+# Visual Studio
+.vs/
