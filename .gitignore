@@ -1,0 +1,29 @@
+
+# Unity paths
+[Ll]ibrary/
+[Bb]uilds/
+[Bb]uild/
+[Ll]ogs/
+[Tt]emp/
+[Oo]bj/
+
+# Project files
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Meta files
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
