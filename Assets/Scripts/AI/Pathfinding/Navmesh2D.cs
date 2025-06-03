@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace Assets.Scripts.AI.Pathfinding
 {
@@ -13,6 +14,16 @@ namespace Assets.Scripts.AI.Pathfinding
         #endregion
 
         #region MonoBehaviour
+        private void Update()
+        {
+            if (InputSystem.actions.FindAction("UI/Click").WasPressedThisFrame())
+            {
+                Ray ray = Camera.main.ScreenPointToRay(Mouse.current.position.value);
+
+                Debug.Log("GridPosition is: " + WorldToGridPosition(ray.origin));
+            }
+        }
+
         private void OnDrawGizmos()
         {
             RenderNavmesh();
@@ -25,9 +36,8 @@ namespace Assets.Scripts.AI.Pathfinding
             for (int x = 0; x < GridSize.x; x++)
             for (int y = 0; y < GridSize.y; y++)
             {
-                    Vector2 position = new Vector2(
-                        WorldPosition.x + NodeSize.x * x - WorldSize.x / 2 + NodeSize.x / 2,
-                        WorldPosition.y + NodeSize.y * y - WorldSize.y / 2 + NodeSize.y / 2
+                    Vector2 position = GridToWorldPosition(
+                        Vector2Int.right * x + Vector2Int.up * y
                     );
                         
                     Gizmos.color = Color.green;
@@ -43,8 +53,8 @@ namespace Assets.Scripts.AI.Pathfinding
         public Node2D GetNodeByGridPosition(Vector2Int gridPosition) { throw new System.NotImplementedException(); }
         public Node2D GetNodeByWorldPosition(Vector2 worldPosition) { throw new System.NotImplementedException(); }
 
-        public Vector2 GridToWorldPosition(Vector2Int gridPosition) { throw new System.NotImplementedException(); }
-        public Vector2Int WorldToGridPosition(Vector2 worldPosition) { throw new System.NotImplementedException(); }
+        public Vector2 GridToWorldPosition(Vector2Int gridPosition) => WorldPosition + NodeSize * gridPosition - WorldSize / 2 + NodeSize / 2;
+        public Vector2Int WorldToGridPosition(Vector2 worldPosition) => Vector2Int.CeilToInt((worldPosition + WorldSize / 2 - WorldPosition - NodeSize) / NodeSize);
         #endregion
     }
 }
