@@ -1,5 +1,7 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Rendering;
 
 namespace Assets.Scripts.AI.Pathfinding
 {
@@ -33,6 +35,9 @@ namespace Assets.Scripts.AI.Pathfinding
                 Node2D? node = GetNodeByWorldPosition(ray.origin);
 
                 Debug.Log("GridPosition is: " + (node.HasValue ? node.Value.GridPosition : "null"));
+
+                foreach (Node2D neighbor in GetNeighbors(node.Value))
+                    Debug.Log("Neighbor: " + neighbor.GridPosition);
             }
         }
 
@@ -61,7 +66,19 @@ namespace Assets.Scripts.AI.Pathfinding
         #endregion
 
         #region Navmesh2D public methods
-        public Node2D[] GetNeighbors(Node2D node) { throw new System.NotImplementedException(); }
+        public Node2D[] GetNeighbors(Node2D node)
+        {
+            List<Node2D> neighbors = new List<Node2D>();
+            for (int dx = -1; dx <= 1; dx++)
+                for (int dy = -1; dy <= 1; dy++)
+                {
+                    if (dx == 0 && dy == 0) continue;
+                    if (node.GridPosition.x + dx < 0 || node.GridPosition.x + dx >= GridSize.x) continue;
+                    if (node.GridPosition.y + dy < 0 || node.GridPosition.y + dy >= GridSize.y) continue;
+                    neighbors.Add(Grid[node.GridPosition.x + dx, node.GridPosition.y + dy]);
+                }
+            return neighbors.ToArray();
+        }
         public Node2D? GetNodeByGridPosition(Vector2Int gridPosition)
         {
             if (gridPosition.x < 0 || gridPosition.x >= GridSize.x) return null;
