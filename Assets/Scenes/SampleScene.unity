@@ -148,8 +148,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: daad6f7dc2cf2154b86b97d7cb792931, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <GridSize>k__BackingField: {x: 5, y: 5}
-  <NodeSize>k__BackingField: {x: 2, y: 1}
+  _gridSize: {x: 6, y: 6}
+  _nodeSize: {x: 1.5, y: 1.5}
 --- !u!4 &120726152
 Transform:
   m_ObjectHideFlags: 0
