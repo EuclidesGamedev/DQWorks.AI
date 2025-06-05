@@ -28,17 +28,6 @@ namespace Assets.Scripts.AI.Pathfinding
             GenerateGrid();
         }
 
-        private void Update()
-        {
-            if (InputSystem.actions.FindAction("UI/Click").WasPressedThisFrame())
-            {
-                Ray ray = Camera.main.ScreenPointToRay(Mouse.current.position.value);
-                Node2D? node = GetNodeByWorldPosition(ray.origin);
-
-                Debug.Log("GridPosition is: " + (node.HasValue ? node.Value.GridPosition : "null"));
-            }
-        }
-
         private void OnDrawGizmos()
         {
             RenderNavmesh();
