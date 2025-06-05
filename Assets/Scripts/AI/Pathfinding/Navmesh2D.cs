@@ -35,9 +35,6 @@ namespace Assets.Scripts.AI.Pathfinding
                 Node2D? node = GetNodeByWorldPosition(ray.origin);
 
                 Debug.Log("GridPosition is: " + (node.HasValue ? node.Value.GridPosition : "null"));
-
-                foreach (Node2D neighbor in GetNeighbors(node.Value))
-                    Debug.Log("Neighbor: " + neighbor.GridPosition);
             }
         }
 
@@ -59,9 +56,20 @@ namespace Assets.Scripts.AI.Pathfinding
 
         private void RenderNavmesh()
         {
-            Gizmos.color = Color.green;
             foreach (Node2D node in Grid)
-                Gizmos.DrawWireCube(GridToWorldPosition(node.GridPosition), NodeSize);
+            {
+                if (node.Walkable)
+                {
+                    Gizmos.color = Color.green;
+                    Gizmos.DrawWireCube(GridToWorldPosition(node.GridPosition), NodeSize);
+                }
+
+                else
+                {
+                    Gizmos.color = Color.red;
+                    Gizmos.DrawCube(GridToWorldPosition(node.GridPosition), NodeSize);
+                }
+            }
         }
         #endregion
 
