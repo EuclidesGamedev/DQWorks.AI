@@ -10,25 +10,25 @@ namespace Assets.Scripts.AI.Pathfinding
         public GridNode(int x, int y) { GridPosition = new Vector2Int(x, y); Walkable = true; }
     }
 
-    public struct PathNode
+    public class PathNode
     {
+        #region Getters and setters
         public int CostF => CostG + CostH;
-        public int CostG { get; set; }
-        public int CostH { get; set; }
-        public GridNode CurrentNode { get; private set; }
-        public GridNode? ParentNode { get; private set; }
+        public int CostG { get; set; } = 0;
+        public int CostH { get; set; } = 0;
+        public GridNode GridNode { get; private set; }
+        public PathNode ParentNode { get; set; } = null;
+        #endregion
+
+        #region Operators
+        public bool Equals(PathNode pathNode) => GridNode.Equals(pathNode.GridNode);
+        public bool Equals(GridNode gridNode) => GridNode.Equals(gridNode);
+        #endregion
 
         public PathNode(GridNode node)
         {
-            CurrentNode = node;
-            CostG = 0;
-            CostH = 0;
-            ParentNode = null;
-        }
-
-        public void SetParent(GridNode node)
-        {
-            ParentNode = node;
+            CostG = 0; CostH = 0;
+            GridNode = node;
         }
     }
 }

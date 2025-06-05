@@ -6,7 +6,7 @@ namespace Assets.Scripts.AI.Pathfinding.AStar
     {
         public static int CalculateF() { throw new System.NotImplementedException(); }
         public static int CalculateG(PathNode node1, GridNode node2) {
-            return node1.CostG + CalculateH(node1.CurrentNode, node2);
+            return node1.CostG + CalculateH(node1.GridNode, node2);
         }
         public static int CalculateH(GridNode node1, GridNode node2)
         {
