@@ -24,6 +24,8 @@ namespace Assets.Scripts.AI.Pathfinding.AStar
         private PathfinderStatus _status;
 
         [field: SerializeField]
+        private int _ticksPerSecond = 50;
+        [field: SerializeField]
         private Navmesh2D _navmesh;
         private GridNode? _startNode;
         private GridNode? _targetNode;
@@ -44,9 +46,10 @@ namespace Assets.Scripts.AI.Pathfinding.AStar
 
             if (_startNode.HasValue && _targetNode.HasValue && _status != PathfinderStatus.SearchingForAPath)
                 StartSearchingPath(_startNode.Value, _targetNode.Value);
-
-            if (_status == PathfinderStatus.SearchingForAPath)
-                PathfinderTick();
+            
+            for (int i = 0; i < 50; i++)
+                if (_status == PathfinderStatus.SearchingForAPath)
+                    PathfinderTick();
         }
 
         private void OnDrawGizmos()
@@ -58,6 +61,15 @@ namespace Assets.Scripts.AI.Pathfinding.AStar
             Gizmos.color = Color.green;
             if (_targetNode.HasValue)
                 Gizmos.DrawCube(_navmesh.GridToWorldPosition(_targetNode.Value.GridPosition), _navmesh.NodeSize);
+
+            Gizmos.color = Color.black;
+            foreach (PathNode node in _closedList)
+                Gizmos.DrawCube(_navmesh.GridToWorldPosition(node.GridNode.GridPosition), _navmesh.NodeSize);
+
+            Gizmos.color = Color.grey;
+            foreach (PathNode node in _openList)
+                Gizmos.DrawCube(_navmesh.GridToWorldPosition(node.GridNode.GridPosition), _navmesh.NodeSize);
+            
 
             RenderPath();
         }
@@ -91,7 +103,7 @@ namespace Assets.Scripts.AI.Pathfinding.AStar
                 else _openList.Add(new PathNode(neighbor)
                 {
                     CostG = Heuristics.CalculateG(currentNode, neighbor),
-                    CostH = Heuristics.CalculateH(currentNode.GridNode, neighbor),
+                    CostH = Heuristics.CalculateH(currentNode.GridNode, _targetNode.Value),
                     ParentNode = currentNode
                 });
             }
