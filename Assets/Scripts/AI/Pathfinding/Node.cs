@@ -2,12 +2,12 @@ using UnityEngine;
 
 namespace Assets.Scripts.AI.Pathfinding
 {
-    public struct Node
+    public struct GridNode
     {
         public Vector2Int GridPosition { get; private set; }
         public bool Walkable { get; set; }
 
-        public Node(int x, int y) { GridPosition = new Vector2Int(x, y); Walkable = true; }
+        public GridNode(int x, int y) { GridPosition = new Vector2Int(x, y); Walkable = true; }
     }
 
     public struct PathNode
@@ -15,10 +15,10 @@ namespace Assets.Scripts.AI.Pathfinding
         public int CostF => CostG + CostH;
         public int CostG { get; set; }
         public int CostH { get; set; }
-        public Node CurrentNode { get; private set; }
-        public Node? ParentNode { get; private set; }
+        public GridNode CurrentNode { get; private set; }
+        public GridNode? ParentNode { get; private set; }
 
-        public PathNode(Node node)
+        public PathNode(GridNode node)
         {
             CurrentNode = node;
             CostG = 0;
@@ -26,7 +26,7 @@ namespace Assets.Scripts.AI.Pathfinding
             ParentNode = null;
         }
 
-        public void SetParent(Node node)
+        public void SetParent(GridNode node)
         {
             ParentNode = node;
         }
