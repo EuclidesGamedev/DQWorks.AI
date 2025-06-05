@@ -42,8 +42,11 @@ namespace Assets.Scripts.AI.Pathfinding.AStar
             if (InputSystem.actions.FindAction("UI/MiddleClick").WasPressedThisFrame())
                 Debug.Log(_navmesh.WorldToGridPosition(ray.origin));
 
-            if (_startNode.HasValue && _targetNode.HasValue)
-                FindPathInOneFrame();
+            if (_startNode.HasValue && _targetNode.HasValue && _status != PathfinderStatus.SearchingForAPath)
+                StartSearchingPath(_startNode.Value, _targetNode.Value);
+
+            if (_status == PathfinderStatus.SearchingForAPath)
+                PathfinderTick();
         }
 
         private void OnDrawGizmos()
@@ -61,60 +64,48 @@ namespace Assets.Scripts.AI.Pathfinding.AStar
         #endregion
 
         #region Pathfinding
-        private void FindPathInOneFrame()
+        private void PathfinderTick()
         {
-            // Initial setup
-            _status = PathfinderStatus.SearchingForAPath;
-            _closedList.Clear();
-            _openList.Clear();
-            _openList.Add(
-                new PathNode(_startNode.Value)
-            );
+            // Sorting and getting the new current node
+            _openList.Sort((x, y) => x.CostF.CompareTo(y.CostF));
+            PathNode currentNode = _openList[0];
 
-            // Pathfinding
-            while (_status == PathfinderStatus.SearchingForAPath)
+            // Processing the neighbors
+            foreach (GridNode neighbor in _navmesh.GetNeighbors(currentNode.GridNode))
             {
-                // Sorting and getting the new current node
-                _openList.Sort((x, y) => x.CostF.CompareTo(y.CostF));
-                PathNode currentNode = _openList[0];
+                if (_closedList.Any(x => x.Equals(neighbor))) continue;
+                if (!neighbor.Walkable) continue;
 
-                // Processing the neighbors
-                foreach (GridNode neighbor in _navmesh.GetNeighbors(currentNode.GridNode))
+                if (_openList.Any(x => x.Equals(neighbor)))
                 {
-                    if (_closedList.Any(x => x.Equals(neighbor))) continue;
-                    if (!neighbor.Walkable) continue;
+                    PathNode _sampleName = _openList.Find(x => x.Equals(neighbor));
+                    int newCostG = Heuristics.CalculateG(currentNode, _sampleName);
 
-                    if (_openList.Any(x => x.Equals(neighbor)))
+                    if (newCostG < _sampleName.CostG)
                     {
-                        PathNode _sampleName = _openList.Find(x => x.Equals(neighbor));
-                        int newCostG = Heuristics.CalculateG(currentNode, _sampleName);
-
-                        if (newCostG < _sampleName.CostG)
-                        {
-                            _sampleName.CostG = newCostG;
-                            _sampleName.ParentNode = currentNode;
-                        }
+                        _sampleName.CostG = newCostG;
+                        _sampleName.ParentNode = currentNode;
                     }
-
-                    else _openList.Add(new PathNode(neighbor)
-                    {
-                        CostG = Heuristics.CalculateG(currentNode, neighbor),
-                        CostH = Heuristics.CalculateH(currentNode.GridNode, neighbor),
-                        ParentNode = currentNode
-                    });
                 }
 
-                // Post-process node
-                _closedList.Add(currentNode);
-                _openList.Remove(currentNode);
-
-                // Ending condition
-                if (currentNode.Equals(_targetNode.Value))
-                    PostProcessFoundPath(currentNode);
-
-                else if (_openList.Count == 0)
-                    _status = PathfinderStatus.WasNotAbleToFindAPath;
+                else _openList.Add(new PathNode(neighbor)
+                {
+                    CostG = Heuristics.CalculateG(currentNode, neighbor),
+                    CostH = Heuristics.CalculateH(currentNode.GridNode, neighbor),
+                    ParentNode = currentNode
+                });
             }
+
+            // Post-process node
+            _closedList.Add(currentNode);
+            _openList.Remove(currentNode);
+
+            // Ending condition
+            if (currentNode.Equals(_targetNode.Value))
+                PostProcessFoundPath(currentNode);
+
+            else if (_openList.Count == 0)
+                _status = PathfinderStatus.WasNotAbleToFindAPath;
         }
 
         private void PostProcessFoundPath(PathNode lastNode)
@@ -134,6 +125,17 @@ namespace Assets.Scripts.AI.Pathfinding.AStar
             Gizmos.color = Color.white;
             foreach (GridNode node in _path)
                 Gizmos.DrawCube(_navmesh.GridToWorldPosition(node.GridPosition), _navmesh.NodeSize);
+        }
+
+        private void StartSearchingPath(GridNode from, GridNode to)
+        {
+            // Initial setup
+            _status = PathfinderStatus.SearchingForAPath;
+            _closedList.Clear();
+            _openList.Clear();
+            _openList.Add(
+                new PathNode(_startNode.Value)
+            );
         }
         #endregion
     }
