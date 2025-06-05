@@ -15,7 +15,7 @@ namespace Assets.Scripts.AI.Pathfinding
         #endregion
 
         #region Getters and setters
-        public Node2D[,] Grid { get; private set; } = { };
+        public Node[,] Grid { get; private set; } = { };
         public Vector2Int GridSize => _gridSize;
         public Vector2 NodeSize => _nodeSize;
         public Vector2 Position => transform.position;
@@ -44,18 +44,18 @@ namespace Assets.Scripts.AI.Pathfinding
 
         private void GenerateGrid()
         {
-            Grid = new Node2D[GridSize.x, GridSize.y];
+            Grid = new Node[GridSize.x, GridSize.y];
 
             for (int x = 0; x < GridSize.x; x++)
                 for (int y = 0; y < GridSize.y; y++)
-                    Grid[x, y] = new Node2D(x, y);
+                    Grid[x, y] = new Node(x, y);
 
             BakeCollisions();
         }
 
         private void RenderNavmesh()
         {
-            foreach (Node2D node in Grid)
+            foreach (Node node in Grid)
             {
                 if (node.Walkable)
                 {
@@ -73,9 +73,9 @@ namespace Assets.Scripts.AI.Pathfinding
         #endregion
 
         #region Navmesh2D public methods
-        public Node2D[] GetNeighbors(Node2D node)
+        public Node[] GetNeighbors(Node node)
         {
-            List<Node2D> neighbors = new List<Node2D>();
+            List<Node> neighbors = new List<Node>();
             for (int dx = -1; dx <= 1; dx++)
                 for (int dy = -1; dy <= 1; dy++)
                 {
@@ -86,13 +86,13 @@ namespace Assets.Scripts.AI.Pathfinding
                 }
             return neighbors.ToArray();
         }
-        public Node2D? GetNodeByGridPosition(Vector2Int gridPosition)
+        public Node? GetNodeByGridPosition(Vector2Int gridPosition)
         {
             if (gridPosition.x < 0 || gridPosition.x >= GridSize.x) return null;
             if (gridPosition.y < 0 || gridPosition.y >= GridSize.y) return null;
             return Grid[gridPosition.x, gridPosition.y];
         }
-        public Node2D? GetNodeByWorldPosition(Vector2 worldPosition) => GetNodeByGridPosition(WorldToGridPosition(worldPosition));
+        public Node? GetNodeByWorldPosition(Vector2 worldPosition) => GetNodeByGridPosition(WorldToGridPosition(worldPosition));
 
         public Vector2 GridToWorldPosition(Vector2Int gridPosition) => Position + NodeSize * gridPosition - WorldSize / 2 + NodeSize / 2;
         public Vector2Int WorldToGridPosition(Vector2 worldPosition) => Vector2Int.CeilToInt((worldPosition + WorldSize / 2 - Position - NodeSize) / NodeSize);

@@ -8,15 +8,15 @@ namespace Assets.Scripts.AI.Pathfinding.AStar
     public class Pathfinder : MonoBehaviour
     {
         #region Read-only properties
-        private readonly List<Node2D> _closedList = new List<Node2D>();
-        private readonly List<Node2D> _openList = new List<Node2D>();
-        private readonly Stack<Node2D> _path = new Stack<Node2D>();
+        private readonly List<Node> _closedList = new List<Node>();
+        private readonly List<Node> _openList = new List<Node>();
+        private readonly Stack<Node> _path = new Stack<Node>();
         #endregion
 
         [field: SerializeField]
         private Navmesh2D _navmesh;
-        private Node2D? _startNode;
-        private Node2D? _targetNode;
+        private Node? _startNode;
+        private Node? _targetNode;
 
         #region MonoBehaviour
         private void Update()
@@ -56,7 +56,7 @@ namespace Assets.Scripts.AI.Pathfinding.AStar
         private void RenderPath()
         {
             Gizmos.color = Color.white;
-            foreach (Node2D node in _path)
+            foreach (Node node in _path)
                 Gizmos.DrawCube(_navmesh.GridToWorldPosition(node.GridPosition), _navmesh.NodeSize);
         }
         #endregion
