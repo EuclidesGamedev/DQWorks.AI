@@ -82,6 +82,10 @@ namespace Assets.Scripts.AI.Pathfinding
                     if (dx == 0 && dy == 0) continue;
                     if (node.GridPosition.x + dx < 0 || node.GridPosition.x + dx >= GridSize.x) continue;
                     if (node.GridPosition.y + dy < 0 || node.GridPosition.y + dy >= GridSize.y) continue;
+                    if (dx != 0 && dy != 0)
+                        if (!Grid[node.GridPosition.x + dx, node.GridPosition.y].Walkable ||
+                            !Grid[node.GridPosition.x, node.GridPosition.y + dy].Walkable) continue;
+
                     neighbors.Add(Grid[node.GridPosition.x + dx, node.GridPosition.y + dy]);
                 }
             return neighbors.ToArray();
