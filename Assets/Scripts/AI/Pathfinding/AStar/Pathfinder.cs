@@ -31,6 +31,9 @@ namespace Assets.Scripts.AI.Pathfinding.AStar
 
             if (InputSystem.actions.FindAction("UI/MiddleClick").WasPressedThisFrame())
                 Debug.Log(_navmesh.WorldToGridPosition(ray.origin));
+
+            if (_startNode.HasValue && _targetNode.HasValue)
+                FindPathInOneFrame();
         }
 
         private void OnDrawGizmos()
@@ -42,6 +45,19 @@ namespace Assets.Scripts.AI.Pathfinding.AStar
             Gizmos.color = Color.green;
             if (_targetNode.HasValue)
                 Gizmos.DrawCube(_navmesh.GridToWorldPosition(_targetNode.Value.GridPosition), _navmesh.NodeSize);
+
+            if (_path.Count > 0)
+                RenderPath();
+        }
+        #endregion
+
+        #region Pathfinding
+        private void FindPathInOneFrame() { throw new System.NotImplementedException(); }
+        private void RenderPath()
+        {
+            Gizmos.color = Color.white;
+            foreach (Node2D node in _path)
+                Gizmos.DrawCube(_navmesh.GridToWorldPosition(node.GridPosition), _navmesh.NodeSize);
         }
         #endregion
     }
