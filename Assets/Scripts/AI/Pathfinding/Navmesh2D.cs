@@ -11,6 +11,7 @@ namespace Assets.Scripts.AI.Pathfinding
         [Header("Navmesh settings")]
         [SerializeField] private Vector2Int _gridSize = new Vector2Int(2, 2);
         [SerializeField] private Vector2 _nodeSize = Vector2.one;
+        [SerializeField] private LayerMask _wallMask = default;
         #endregion
 
         #region Getters and setters
@@ -45,6 +46,13 @@ namespace Assets.Scripts.AI.Pathfinding
         #endregion
 
         #region Navmesh2D private methods
+        private void BakeCollisions()
+        {
+            for (int x = 0; x < GridSize.x; x++)
+                for (int y = 0; y < GridSize.y; y++)
+                    Grid[x, y].Walkable = !Physics2D.OverlapBox(GridToWorldPosition(Grid[x, y].GridPosition), NodeSize, 0f, _wallMask);
+        }
+
         private void GenerateGrid()
         {
             Grid = new Node2D[GridSize.x, GridSize.y];
@@ -52,6 +60,8 @@ namespace Assets.Scripts.AI.Pathfinding
             for (int x = 0; x < GridSize.x; x++)
                 for (int y = 0; y < GridSize.y; y++)
                     Grid[x, y] = new Node2D(x, y);
+
+            BakeCollisions();
         }
 
         private void RenderNavmesh()
