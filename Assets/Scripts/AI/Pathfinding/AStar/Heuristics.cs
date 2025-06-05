@@ -4,7 +4,7 @@ namespace Assets.Scripts.AI.Pathfinding.AStar
 {
     public static class Heuristics
     {
-        public static int CalculateF() { throw new System.NotImplementedException(); }
+        public static int CalculateG(PathNode node1, PathNode node2) => CalculateG(node1, node2.GridNode);
         public static int CalculateG(PathNode node1, GridNode node2) {
             return node1.CostG + CalculateH(node1.GridNode, node2);
         }
