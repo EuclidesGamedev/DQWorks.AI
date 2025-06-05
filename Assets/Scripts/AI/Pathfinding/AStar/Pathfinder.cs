@@ -6,6 +6,13 @@ using UnityEngine.InputSystem;
 
 namespace Assets.Scripts.AI.Pathfinding.AStar
 {
+    public enum PathfinderStatus
+    {
+        WasNotAbleToFindAPath,
+        SearchingForAPath,
+        FoundAValidPath,
+    }
+
     public class Pathfinder : MonoBehaviour
     {
         #region Read-only properties
@@ -13,6 +20,8 @@ namespace Assets.Scripts.AI.Pathfinding.AStar
         private readonly List<PathNode> _openList = new List<PathNode>();
         private readonly Stack<GridNode> _path = new Stack<GridNode>();
         #endregion
+
+        private PathfinderStatus _status;
 
         [field: SerializeField]
         private Navmesh2D _navmesh;
@@ -54,10 +63,8 @@ namespace Assets.Scripts.AI.Pathfinding.AStar
         #region Pathfinding
         private void FindPathInOneFrame()
         {
-            PathNode lastNode = null;
-            bool found = false;
-
             // Initial setup
+            _status = PathfinderStatus.SearchingForAPath;
             _closedList.Clear();
             _openList.Clear();
             _openList.Add(
@@ -65,7 +72,7 @@ namespace Assets.Scripts.AI.Pathfinding.AStar
             );
 
             // Pathfinding
-            while (_openList.Count > 0)
+            while (_status == PathfinderStatus.SearchingForAPath)
             {
                 // Sorting and getting the new current node
                 _openList.Sort((x, y) => x.CostF.CompareTo(y.CostF));
@@ -103,26 +110,25 @@ namespace Assets.Scripts.AI.Pathfinding.AStar
 
                 // Ending condition
                 if (currentNode.Equals(_targetNode.Value))
-                {
-                    lastNode = currentNode;
-                    found = true;
-                    break;
-                }
-            }
+                    PostProcessFoundPath(currentNode);
 
-            // Post-process path
-            if (found)
-            {
-                _path.Clear();
-                PathNode n = lastNode;
-
-                while (n != null)
-                {
-                    _path.Push(n.GridNode);
-                    n = n.ParentNode;
-                }
+                else if (_openList.Count == 0)
+                    _status = PathfinderStatus.WasNotAbleToFindAPath;
             }
         }
+
+        private void PostProcessFoundPath(PathNode lastNode)
+        {
+            _status = PathfinderStatus.FoundAValidPath;
+
+            _path.Clear();
+            while (lastNode != null)
+            {
+                _path.Push(lastNode.GridNode);
+                lastNode = lastNode.ParentNode;
+            }
+        }
+
         private void RenderPath()
         {
             Gizmos.color = Color.white;
