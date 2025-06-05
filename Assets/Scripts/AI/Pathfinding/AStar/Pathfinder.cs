@@ -1,5 +1,6 @@
 using Assets.Scripts.AI.Pathfinding;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -8,8 +9,8 @@ namespace Assets.Scripts.AI.Pathfinding.AStar
     public class Pathfinder : MonoBehaviour
     {
         #region Read-only properties
-        private readonly List<GridNode> _closedList = new List<GridNode>();
-        private readonly List<GridNode> _openList = new List<GridNode>();
+        private readonly List<PathNode> _closedList = new List<PathNode>();
+        private readonly List<PathNode> _openList = new List<PathNode>();
         private readonly Stack<GridNode> _path = new Stack<GridNode>();
         #endregion
 
@@ -46,13 +47,82 @@ namespace Assets.Scripts.AI.Pathfinding.AStar
             if (_targetNode.HasValue)
                 Gizmos.DrawCube(_navmesh.GridToWorldPosition(_targetNode.Value.GridPosition), _navmesh.NodeSize);
 
-            if (_path.Count > 0)
-                RenderPath();
+            RenderPath();
         }
         #endregion
 
         #region Pathfinding
-        private void FindPathInOneFrame() { throw new System.NotImplementedException(); }
+        private void FindPathInOneFrame()
+        {
+            PathNode lastNode = null;
+            bool found = false;
+
+            // Initial setup
+            _closedList.Clear();
+            _openList.Clear();
+            _openList.Add(
+                new PathNode(_startNode.Value)
+            );
+
+            // Pathfinding
+            while (_openList.Count > 0)
+            {
+                // Sorting and getting the new current node
+                _openList.Sort((x, y) => x.CostF.CompareTo(y.CostF));
+                PathNode currentNode = _openList[0];
+
+                // Processing the neighbors
+                foreach (GridNode neighbor in _navmesh.GetNeighbors(currentNode.GridNode))
+                {
+                    if (_closedList.Any(x => x.Equals(neighbor))) continue;
+                    if (!neighbor.Walkable) continue;
+
+                    if (_openList.Any(x => x.Equals(neighbor)))
+                    {
+                        PathNode _sampleName = _openList.Find(x => x.Equals(neighbor));
+                        int newCostG = Heuristics.CalculateG(currentNode, _sampleName);
+
+                        if (newCostG < _sampleName.CostG)
+                        {
+                            _sampleName.CostG = newCostG;
+                            _sampleName.ParentNode = currentNode;
+                        }
+                    }
+
+                    else _openList.Add(new PathNode(neighbor)
+                    {
+                        CostG = Heuristics.CalculateG(currentNode, neighbor),
+                        CostH = Heuristics.CalculateH(currentNode.GridNode, neighbor),
+                        ParentNode = currentNode
+                    });
+                }
+
+                // Post-process node
+                _closedList.Add(currentNode);
+                _openList.Remove(currentNode);
+
+                // Ending condition
+                if (currentNode.Equals(_targetNode.Value))
+                {
+                    lastNode = currentNode;
+                    found = true;
+                    break;
+                }
+            }
+
+            // Post-process path
+            if (found)
+            {
+                _path.Clear();
+                PathNode n = lastNode;
+
+                while (n != null)
+                {
+                    _path.Push(n.GridNode);
+                    n = n.ParentNode;
+                }
+            }
+        }
         private void RenderPath()
         {
             Gizmos.color = Color.white;
