@@ -143,7 +143,7 @@ namespace DQWorks.AI.Pathfinding.AStar
 
         public void StopPathfinding()
         {
-            Status = PathfinderStatus.Searching;
+            Status = PathfinderStatus.Impossible;
             ResetClosedAndOpenList();
         }
         #endregion
