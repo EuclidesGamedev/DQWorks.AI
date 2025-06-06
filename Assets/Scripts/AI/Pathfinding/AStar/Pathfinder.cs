@@ -37,20 +37,6 @@ namespace DQWorks.AI.Pathfinding.AStar
         #region MonoBehaviour
         private void Update()
         {
-            Ray ray = Camera.main.ScreenPointToRay(Mouse.current.position.value);
-
-            if (InputSystem.actions.FindAction("UI/Click").WasPressedThisFrame())
-                _startNode = _navmesh.GetNodeByGridPosition(_navmesh.WorldToGridPosition(ray.origin));
-
-            if (InputSystem.actions.FindAction("UI/RightClick").WasPressedThisFrame())
-                _targetNode = _navmesh.GetNodeByGridPosition(_navmesh.WorldToGridPosition(ray.origin));
-
-            if (InputSystem.actions.FindAction("UI/MiddleClick").WasPressedThisFrame())
-                Debug.Log(_navmesh.WorldToGridPosition(ray.origin));
-
-            if (_startNode.HasValue && _targetNode.HasValue && Status != PathfinderStatus.SearchingForAPath)
-                StartSearchingPath(_startNode.Value, _targetNode.Value);
-            
             for (int i = 0; i < 50; i++)
                 if (Status == PathfinderStatus.SearchingForAPath)
                     PathfinderTick();
@@ -143,6 +129,13 @@ namespace DQWorks.AI.Pathfinding.AStar
                 Gizmos.DrawCube(_navmesh.GridToWorldPosition(node.GridPosition), _navmesh.NodeSize);
         }
 
+        public void SearchForThePathInOneFrame(GridNode from, GridNode to, Navmesh2D on)
+        {
+            StartSearchingPath(from, to, on);
+            while (Status == PathfinderStatus.SearchingForAPath)
+                PathfinderTick();
+        }
+
         public void StartSearchingPath(GridNode from, GridNode to, Navmesh2D on)
         {
             _navmesh = on;
@@ -152,6 +145,7 @@ namespace DQWorks.AI.Pathfinding.AStar
         public void StartSearchingPath(GridNode from, GridNode to)
         {
             // Initial setup
+            _startNode = from; _targetNode = to;
             Status = PathfinderStatus.SearchingForAPath;
             _closedList.Clear();
             _openList.Clear();
@@ -161,11 +155,5 @@ namespace DQWorks.AI.Pathfinding.AStar
         }
         #endregion
 
-    #if UNITY_INCLUDE_TESTS
-    public void MethodForTestsForceTicking()
-    {
-
-    }
-    #endif
     }
 }
