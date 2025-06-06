@@ -1,6 +1,7 @@
 using DQWorks.AI.Pathfinding;
 using DQWorks.AI.Pathfinding.AStar;
 using NUnit.Framework;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 namespace DQWorks.Tests.AI.Pathfinding
@@ -25,11 +26,110 @@ namespace DQWorks.Tests.AI.Pathfinding
         #region Test cases
         //// Tests related to pathfinding process behaviour
         // Positive tests //
-        public void TestCanFindPathInLargeGrids() { throw new System.NotImplementedException(); }
-        public void TestCanFindPathInSmallGrids() { throw new System.NotImplementedException(); }
-        public void TestCanFindPathToItself() { throw new System.NotImplementedException(); }
-        public void TestCanFindPathToNeighbors() { throw new System.NotImplementedException(); }
-        public void TestCanFindPathWhenGridHasBlockedNodes() { throw new System.NotImplementedException(); }
+        [TestCase] public void TestCanFindPathInLargeGrids()
+        {
+            // Navmesh setup for the test
+            _navmesh.GridSize = new Vector2Int(128, 128);
+
+            // Try to find small path in large grid and assert it was found
+            _finder.SearchPathInOneFrame(
+                _navmesh.GetNodeByGridPosition(new Vector2Int(0, 0)).Value,
+                _navmesh.GetNodeByGridPosition(new Vector2Int(9, 9)).Value
+            );
+            Assert.AreEqual(PathfinderStatus.Found, _finder.Status);
+
+            // Try to find large path in large grid and assert it was found
+            _finder.SearchPathInOneFrame(
+                _navmesh.GetNodeByGridPosition(new Vector2Int(0, 0)).Value,
+                _navmesh.GetNodeByGridPosition(new Vector2Int(127, 127)).Value
+            );
+            Assert.AreEqual(PathfinderStatus.Found, _finder.Status);
+        }
+        [TestCase] public void TestCanFindPathInSmallGrids()
+        {
+            // Navmesh setup for the test
+            _navmesh.GridSize = new Vector2Int(2, 2);
+
+            // Try to find the path in the 2x2 grid
+            _finder.SearchPathInOneFrame(
+                    _navmesh.GetNodeByGridPosition(new Vector2Int(0, 0)).Value,
+                    _navmesh.GetNodeByGridPosition(new Vector2Int(1, 1)).Value
+                );
+            Assert.AreEqual(PathfinderStatus.Found, _finder.Status);
+
+            // Navmesh setup for multiple tests
+            _navmesh.GridSize = new Vector2Int(3, 3);
+
+            // It will test all possible paths in a 3x3 grid, and assert all are valid.
+            // There's no blocked node in this grid, it'll be 81 tests.
+            foreach (GridNode node1 in _navmesh.Grid)
+                foreach (GridNode node2 in _navmesh.Grid)
+                {
+                    _finder.SearchPathInOneFrame(node1, node2);
+                    Assert.AreEqual(PathfinderStatus.Found, _finder.Status);
+                }
+        }
+        [TestCase] public void TestCanFindPathToItself() {
+            // Navmesh setup for the test
+            _navmesh.GridSize = new Vector2Int(2, 2);
+
+            // Try to find the path to itself
+            _finder.SearchPathInOneFrame(
+                    _navmesh.GetNodeByGridPosition(new Vector2Int(0, 0)).Value,
+                    _navmesh.GetNodeByGridPosition(new Vector2Int(0, 0)).Value
+                );
+            Assert.AreEqual(PathfinderStatus.Found, _finder.Status);
+        }
+        [TestCase] public void TestCanFindPathToNeighbors() {
+            // Navmesh setup for the test
+            _navmesh.GridSize = new Vector2Int(3, 3);
+            GridNode? node; // It stores the node used in the tests
+
+            // Test node in corner can find path to its neighbors
+            node = _navmesh.GetNodeByGridPosition(new Vector2Int(0, 0)); // Node on grid corner
+            foreach (GridNode neighbor in _navmesh.GetNeighbors(node.Value))
+            {
+                // Try to find the path to neighbord and assert it was found
+                _finder.SearchPathInOneFrame(node.Value, neighbor);
+                Assert.AreEqual(PathfinderStatus.Found, _finder.Status);
+            }
+            
+            // Test node in sideline can find path to its neighbors
+            node = _navmesh.GetNodeByGridPosition(new Vector2Int(0, 1)); // Node on grid sideline
+            foreach (GridNode neighbor in _navmesh.GetNeighbors(node.Value))
+            {
+                // Try to find the path to neighbord and assert it was found
+                _finder.SearchPathInOneFrame(node.Value, neighbor);
+                Assert.AreEqual(PathfinderStatus.Found, _finder.Status);
+            }
+
+            // Test node inside can find path to its neighbors
+            node = _navmesh.GetNodeByGridPosition(new Vector2Int(1, 1)); // Node inside grid
+            foreach (GridNode neighbor in _navmesh.GetNeighbors(node.Value))
+            {
+                // Try to find the path to neighbord and assert it was found
+                _finder.SearchPathInOneFrame(node.Value, neighbor);
+                Assert.AreEqual(PathfinderStatus.Found, _finder.Status);
+            }
+        }
+        [TestCase] public void TestCanFindPathWhenGridHasBlockedNodes()
+        {
+            // Navmesh setup for the test
+            // [ ] [ ] [T]
+            // [ ] [X] [ ]
+            // [S] [ ] [ ]
+            _navmesh.GridSize = new Vector2Int(5, 3);
+            _navmesh.Grid[1, 1].Walkable = false;
+
+            // Try to find the path
+            _finder.SearchPathInOneFrame(
+                _navmesh.GetNodeByGridPosition(new Vector2Int(0, 0)).Value,
+                _navmesh.GetNodeByGridPosition(new Vector2Int(2, 2)).Value
+            );
+
+            // Assert path was found
+            Assert.AreEqual(PathfinderStatus.Found, _finder.Status);
+        }
         // Negative tests //
         [TestCase] public void TestCantFindPathFromBlockedNode()
         {
