@@ -14,8 +14,8 @@ namespace DQWorks.AI.Pathfinding
 
         #region Getters and setters
         public GridNode[,] Grid { get; private set; } = { };
-        public Vector2Int GridSize => _gridSize;
-        public Vector2 NodeSize => _nodeSize;
+        public Vector2Int GridSize { get => _gridSize; set { _gridSize = value; RegenerateGrid(); } }
+        public Vector2 NodeSize { get => _nodeSize; set { _nodeSize = value; RegenerateGrid();  } }
         public Vector2 Position => transform.position;
         public Vector2 WorldSize => GridSize * NodeSize;
         #endregion
@@ -49,6 +49,11 @@ namespace DQWorks.AI.Pathfinding
                     Grid[x, y] = new GridNode(x, y);
 
             BakeCollisions();
+        }
+
+        private void RegenerateGrid()
+        {
+            GenerateGrid();
         }
 
         private void RenderNavmesh()

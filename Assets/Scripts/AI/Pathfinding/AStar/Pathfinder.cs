@@ -138,7 +138,13 @@ namespace DQWorks.AI.Pathfinding.AStar
                 Gizmos.DrawCube(_navmesh.GridToWorldPosition(node.GridPosition), _navmesh.NodeSize);
         }
 
-        private void StartSearchingPath(GridNode from, GridNode to)
+        public void StartSearchingPath(GridNode from, GridNode to, Navmesh2D on)
+        {
+            _navmesh = on;
+            StartSearchingPath(from, to);
+        }
+
+        public void StartSearchingPath(GridNode from, GridNode to)
         {
             // Initial setup
             _status = PathfinderStatus.SearchingForAPath;
@@ -150,4 +156,4 @@ namespace DQWorks.AI.Pathfinding.AStar
         }
         #endregion
     }
-}
+    }
