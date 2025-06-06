@@ -20,14 +20,19 @@ namespace DQWorks.AI.Pathfinding.AStar
         private readonly Stack<GridNode> _path = new Stack<GridNode>();
         #endregion
 
-        private PathfinderStatus _status;
-
-        [field: SerializeField]
-        private int _ticksPerSecond = 50;
-        [field: SerializeField]
-        private Navmesh2D _navmesh;
+        #region Private properties
+        [Header("Pathfinder settings")]
+        [field: SerializeField] private Navmesh2D _navmesh;
+        [field: SerializeField] private int _ticksPerSecond = 50;
         private GridNode? _startNode;
         private GridNode? _targetNode;
+        #endregion
+
+
+        #region Getters and setters
+        public Stack<GridNode> PathStack => _path;
+        public PathfinderStatus Status { get; set; }
+        #endregion
 
         #region MonoBehaviour
         private void Update()
@@ -43,11 +48,11 @@ namespace DQWorks.AI.Pathfinding.AStar
             if (InputSystem.actions.FindAction("UI/MiddleClick").WasPressedThisFrame())
                 Debug.Log(_navmesh.WorldToGridPosition(ray.origin));
 
-            if (_startNode.HasValue && _targetNode.HasValue && _status != PathfinderStatus.SearchingForAPath)
+            if (_startNode.HasValue && _targetNode.HasValue && Status != PathfinderStatus.SearchingForAPath)
                 StartSearchingPath(_startNode.Value, _targetNode.Value);
             
             for (int i = 0; i < 50; i++)
-                if (_status == PathfinderStatus.SearchingForAPath)
+                if (Status == PathfinderStatus.SearchingForAPath)
                     PathfinderTick();
         }
 
@@ -116,12 +121,12 @@ namespace DQWorks.AI.Pathfinding.AStar
                 PostProcessFoundPath(currentNode);
 
             else if (_openList.Count == 0)
-                _status = PathfinderStatus.WasNotAbleToFindAPath;
+                Status = PathfinderStatus.WasNotAbleToFindAPath;
         }
 
         private void PostProcessFoundPath(PathNode lastNode)
         {
-            _status = PathfinderStatus.FoundAValidPath;
+            Status = PathfinderStatus.FoundAValidPath;
 
             _path.Clear();
             while (lastNode != null)
@@ -147,7 +152,7 @@ namespace DQWorks.AI.Pathfinding.AStar
         public void StartSearchingPath(GridNode from, GridNode to)
         {
             // Initial setup
-            _status = PathfinderStatus.SearchingForAPath;
+            Status = PathfinderStatus.SearchingForAPath;
             _closedList.Clear();
             _openList.Clear();
             _openList.Add(
@@ -155,5 +160,12 @@ namespace DQWorks.AI.Pathfinding.AStar
             );
         }
         #endregion
+
+    #if UNITY_INCLUDE_TESTS
+    public void MethodForTestsForceTicking()
+    {
+
     }
+    #endif
     }
+}

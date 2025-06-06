@@ -6,7 +6,7 @@ namespace DQWorks.AI.Pathfinding
     public class Navmesh2D : MonoBehaviour
     {
         #region Serialized fields
-        [Header("Navmesh settings")]
+        [Header("_navmesh settings")]
         [SerializeField] private Vector2Int _gridSize = new Vector2Int(2, 2);
         [SerializeField] private Vector2 _nodeSize = Vector2.one;
         [SerializeField] private LayerMask _wallMask = default;
