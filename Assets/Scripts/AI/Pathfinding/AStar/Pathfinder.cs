@@ -26,7 +26,6 @@ namespace DQWorks.AI.Pathfinding.AStar
         private GridNode? _startNode, _targetNode;
         #endregion
 
-
         #region Getters and setters
         public Navmesh2D Navmesh { get => _navmesh; set { _navmesh = value; StopPathfinding(); } }
         public Stack<GridNode> PathStack => _path;
@@ -127,6 +126,12 @@ namespace DQWorks.AI.Pathfinding.AStar
 
         public void StartPathfinding(GridNode from, GridNode to)
         {
+            // Conditions to pathfinding not to start
+            if (Status == PathfinderStatus.Searching)
+                return;
+            if (!from.Walkable || !to.Walkable)
+                return;
+
             // Set start and target node
             _startNode = from;
             _targetNode = to;
