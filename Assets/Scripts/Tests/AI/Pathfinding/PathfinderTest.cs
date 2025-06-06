@@ -23,15 +23,21 @@ namespace DQWorks.Tests.AI.Pathfinding
         #endregion
 
         #region Test cases
-        // Tests related to pathfinding process behaviour
+        //// Tests related to pathfinding process behaviour
+        // Positive tests //
         public void TestCanFindPathInLargeGrids() { throw new System.NotImplementedException(); }
         public void TestCanFindPathInSmallGrids() { throw new System.NotImplementedException(); }
         public void TestCanFindPathToItself() { throw new System.NotImplementedException(); }
         public void TestCanFindPathToNeighbors() { throw new System.NotImplementedException(); }
+        public void TestCanFindPathWhenGridHasBlockedNodes() { throw new System.NotImplementedException(); }
+        // Negative tests //
+        public void TestCantFindPathFromBlockedNode() { throw new System.NotImplementedException(); }
         public void TestCantFindImpossiblePaths() { throw new System.NotImplementedException(); }
+        public void TestCantFindPathToBlockedNode() { throw new System.NotImplementedException(); }
         public void TestCantPassThroughBlockedCorner() { throw new System.NotImplementedException(); }
+        public void TestPathDontIncludeAnyBlockedNode() { throw new System.NotImplementedException(); }
 
-        // Tests related to Pathfinder class behaviour
+        //// Tests related to Pathfinder class behaviour
         [TestCase] public void TestSetNavmeshStopsPathfindingProcess()
         {
             // Navmesh setup for the test
