@@ -17,6 +17,7 @@ namespace DQWorks.Tests.AI.Pathfinding
 
             _navmesh = gameObject.AddComponent<Navmesh2D>();
             _finder = gameObject.AddComponent<Pathfinder>();
+            _finder.Navmesh = _navmesh;
         }
 
 
@@ -24,39 +25,36 @@ namespace DQWorks.Tests.AI.Pathfinding
         public void TestCanFindPathIfTargetIsANeighbor()
         {
             _navmesh.GridSize = new Vector2Int(3, 3);
-            _finder.SearchForThePathInOneFrame(
+            _finder.SearchPathInOneFrame(
                 _navmesh.GetNodeByGridPosition(new Vector2Int(1, 0)).Value,
-                _navmesh.GetNodeByGridPosition(new Vector2Int(0, 1)).Value,
-                _navmesh
+                _navmesh.GetNodeByGridPosition(new Vector2Int(0, 1)).Value
             );
 
-            Assert.AreEqual(PathfinderStatus.FoundAValidPath, _finder.Status);
+            Assert.AreEqual(PathfinderStatus.Found, _finder.Status);
         }
 
         [TestCase]
         public void TestCanFindPathToItself()
         {
             _navmesh.GridSize = new Vector2Int(3, 3);
-            _finder.SearchForThePathInOneFrame(
+            _finder.SearchPathInOneFrame(
                 _navmesh.GetNodeByGridPosition(new Vector2Int(0, 0)).Value,
-                _navmesh.GetNodeByGridPosition(new Vector2Int(0, 0)).Value,
-                _navmesh
+                _navmesh.GetNodeByGridPosition(new Vector2Int(0, 0)).Value
             );
 
-            Assert.AreEqual(PathfinderStatus.FoundAValidPath, _finder.Status);
+            Assert.AreEqual(PathfinderStatus.Found, _finder.Status);
         }
 
         [TestCase]
         public void TestCanFindPathOnBigGrids()
         {
             _navmesh.GridSize = new Vector2Int(128, 128);
-            _finder.SearchForThePathInOneFrame(
+            _finder.SearchPathInOneFrame(
                 _navmesh.GetNodeByGridPosition(new Vector2Int(0, 0)).Value,
-                _navmesh.GetNodeByGridPosition(new Vector2Int(127, 127)).Value,
-                _navmesh
+                _navmesh.GetNodeByGridPosition(new Vector2Int(127, 127)).Value
             );
 
-            Assert.AreEqual(PathfinderStatus.FoundAValidPath, _finder.Status);
+            Assert.AreEqual(PathfinderStatus.Found, _finder.Status);
         }
 
         [TestCase]
@@ -73,13 +71,12 @@ namespace DQWorks.Tests.AI.Pathfinding
             _navmesh.Grid[1, 2].Walkable = false;
             _navmesh.Grid[1, 1].Walkable = false;
             _navmesh.Grid[1, 0].Walkable = false;
-            _finder.SearchForThePathInOneFrame(
+            _finder.SearchPathInOneFrame(
                 _navmesh.GetNodeByGridPosition(new Vector2Int(0, 0)).Value,
-                _navmesh.GetNodeByGridPosition(new Vector2Int(2, 2)).Value,
-                _navmesh
+                _navmesh.GetNodeByGridPosition(new Vector2Int(2, 2)).Value
             );
 
-            Assert.AreEqual(PathfinderStatus.WasNotAbleToFindAPath, _finder.Status);
+            Assert.AreEqual(PathfinderStatus.Impossible, _finder.Status);
         }
 
         [TestCase]
@@ -96,13 +93,12 @@ namespace DQWorks.Tests.AI.Pathfinding
             _navmesh.Grid[0, 2].Walkable = false;
             _navmesh.Grid[1, 1].Walkable = false;
             _navmesh.Grid[2, 0].Walkable = false;
-            _finder.SearchForThePathInOneFrame(
+            _finder.SearchPathInOneFrame(
                 _navmesh.GetNodeByGridPosition(new Vector2Int(0, 0)).Value,
-                _navmesh.GetNodeByGridPosition(new Vector2Int(2, 2)).Value,
-                _navmesh
+                _navmesh.GetNodeByGridPosition(new Vector2Int(2, 2)).Value
             );
 
-            Assert.AreEqual(PathfinderStatus.WasNotAbleToFindAPath, _finder.Status);
+            Assert.AreEqual(PathfinderStatus.Impossible, _finder.Status);
         }
     }
 }

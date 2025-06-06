@@ -6,29 +6,29 @@ namespace DQWorks.AI.Pathfinding.AStar
 {
     public enum PathfinderStatus
     {
-        WasNotAbleToFindAPath,
-        SearchingForAPath,
-        FoundAValidPath,
+        Impossible,
+        Searching,
+        Found,
     }
 
     public class Pathfinder : MonoBehaviour
     {
         #region Read-only properties
         private readonly List<PathNode> _closedList = new List<PathNode>();
-        private readonly List<PathNode> _openList = new List<PathNode>();
+        private readonly List<PathNode> _openedList = new List<PathNode>();
         private readonly Stack<GridNode> _path = new Stack<GridNode>();
         #endregion
 
         #region Private properties
         [Header("Pathfinder settings")]
         [field: SerializeField] private Navmesh2D _navmesh;
-        [field: SerializeField] private int _ticksPerSecond = 50;
-        private GridNode? _startNode;
-        private GridNode? _targetNode;
+        [field: SerializeField] private int _updatesPerSec = 50;
+        private GridNode? _startNode, _targetNode;
         #endregion
 
 
         #region Getters and setters
+        public Navmesh2D Navmesh { get => _navmesh; set { _navmesh = value; StopPathfinding(); } }
         public Stack<GridNode> PathStack => _path;
         public PathfinderStatus Status { get; set; }
         #endregion
@@ -36,50 +36,39 @@ namespace DQWorks.AI.Pathfinding.AStar
         #region MonoBehaviour
         private void Update()
         {
-            for (int i = 0; i < 50; i++)
-                if (Status == PathfinderStatus.SearchingForAPath)
-                    PathfinderTick();
+            for (int i = 0; i < _updatesPerSec; i++)
+                DoPathfinding();
         }
 
         private void OnDrawGizmos()
         {
-            Gizmos.color = Color.blue;
-            if (_startNode.HasValue)
-                Gizmos.DrawCube(_navmesh.GridToWorldPosition(_startNode.Value.GridPosition), _navmesh.NodeSize);
-
-            Gizmos.color = Color.green;
-            if (_targetNode.HasValue)
-                Gizmos.DrawCube(_navmesh.GridToWorldPosition(_targetNode.Value.GridPosition), _navmesh.NodeSize);
-
-            Gizmos.color = Color.black;
-            foreach (PathNode node in _closedList)
-                Gizmos.DrawCube(_navmesh.GridToWorldPosition(node.GridNode.GridPosition), _navmesh.NodeSize);
-
-            Gizmos.color = Color.grey;
-            foreach (PathNode node in _openList)
-                Gizmos.DrawCube(_navmesh.GridToWorldPosition(node.GridNode.GridPosition), _navmesh.NodeSize);
-            
-
             RenderPath();
+            RenderPathfinding();
+            RenderStartAndTarget();
         }
         #endregion
 
-        #region Pathfinding
-        private void PathfinderTick()
+        #region Pathfinder
+        private void DoPathfinding()
         {
+            // Inverted if to check if status is "Searching"
+            if (Status != PathfinderStatus.Searching)
+                return;
+
             // Sorting and getting the new current node
-            _openList.Sort((x, y) => x.CostF.CompareTo(y.CostF));
-            PathNode currentNode = _openList[0];
+            _openedList.Sort((x, y) => x.CostF.CompareTo(y.CostF));
+            PathNode currentNode = _openedList[0];
 
             // Processing the neighbors
             foreach (GridNode neighbor in _navmesh.GetNeighbors(currentNode.GridNode))
             {
-                if (_closedList.Any(x => x.Equals(neighbor))) continue;
                 if (!neighbor.Walkable) continue;
+                if (_closedList.Any(x => x.Equals(neighbor))) continue;
 
-                if (_openList.Any(x => x.Equals(neighbor)))
+                // If it's already on _openedList, try to optimize the path
+                if (_openedList.Any(x => x.Equals(neighbor)))
                 {
-                    PathNode _sampleName = _openList.Find(x => x.Equals(neighbor));
+                    PathNode _sampleName = _openedList.Find(x => x.Equals(neighbor));
                     int newCostG = Heuristics.CalculateG(currentNode, _sampleName);
 
                     if (newCostG < _sampleName.CostG)
@@ -89,7 +78,8 @@ namespace DQWorks.AI.Pathfinding.AStar
                     }
                 }
 
-                else _openList.Add(new PathNode(neighbor)
+                // Otherwise, add the neighbor to open list
+                else _openedList.Add(new PathNode(neighbor)
                 {
                     CostG = Heuristics.CalculateG(currentNode, neighbor),
                     CostH = Heuristics.CalculateH(currentNode.GridNode, _targetNode.Value),
@@ -97,22 +87,23 @@ namespace DQWorks.AI.Pathfinding.AStar
                 });
             }
 
-            // Post-process node
+            // Add node on closed list and remove from opened one
             _closedList.Add(currentNode);
-            _openList.Remove(currentNode);
+            _openedList.Remove(currentNode);
 
-            // Ending condition
+            // Ending conditions
             if (currentNode.Equals(_targetNode.Value))
-                PostProcessFoundPath(currentNode);
+            {
+                ProcessFoundPath(currentNode);
+                Status = PathfinderStatus.Found;
+            }
 
-            else if (_openList.Count == 0)
-                Status = PathfinderStatus.WasNotAbleToFindAPath;
+            else if (_openedList.Count == 0)
+                Status = PathfinderStatus.Impossible;
         }
 
-        private void PostProcessFoundPath(PathNode lastNode)
+        private void ProcessFoundPath(PathNode lastNode)
         {
-            Status = PathfinderStatus.FoundAValidPath;
-
             _path.Clear();
             while (lastNode != null)
             {
@@ -121,6 +112,43 @@ namespace DQWorks.AI.Pathfinding.AStar
             }
         }
 
+        private void ResetClosedAndOpenList()
+        {
+            _closedList.Clear();
+            _openedList.Clear();
+        }
+
+        public void SearchPathInOneFrame(GridNode from, GridNode to)
+        {
+            StartPathfinding(from, to);
+            while (Status == PathfinderStatus.Searching)
+                DoPathfinding();
+        }
+
+        public void StartPathfinding(GridNode from, GridNode to)
+        {
+            // Set start and target node
+            _startNode = from;
+            _targetNode = to;
+
+            // Initial lists' setup
+            ResetClosedAndOpenList();
+            _openedList.Add(
+                new PathNode(_startNode.Value)
+            );
+
+            // Set status to searching
+            Status = PathfinderStatus.Searching;
+        }
+
+        public void StopPathfinding()
+        {
+            Status = PathfinderStatus.Searching;
+            ResetClosedAndOpenList();
+        }
+        #endregion
+
+        #region Path rendering
         private void RenderPath()
         {
             Gizmos.color = Color.white;
@@ -128,31 +156,27 @@ namespace DQWorks.AI.Pathfinding.AStar
                 Gizmos.DrawCube(_navmesh.GridToWorldPosition(node.GridPosition), _navmesh.NodeSize);
         }
 
-        public void SearchForThePathInOneFrame(GridNode from, GridNode to, Navmesh2D on)
+        private void RenderPathfinding()
         {
-            StartSearchingPath(from, to, on);
-            while (Status == PathfinderStatus.SearchingForAPath)
-                PathfinderTick();
+            Gizmos.color = Color.black;
+            foreach (PathNode node in _closedList)
+                Gizmos.DrawCube(_navmesh.GridToWorldPosition(node.GridNode.GridPosition), _navmesh.NodeSize);
+
+            Gizmos.color = Color.grey;
+            foreach (PathNode node in _openedList)
+                Gizmos.DrawCube(_navmesh.GridToWorldPosition(node.GridNode.GridPosition), _navmesh.NodeSize);
         }
 
-        public void StartSearchingPath(GridNode from, GridNode to, Navmesh2D on)
+        private void RenderStartAndTarget()
         {
-            _navmesh = on;
-            StartSearchingPath(from, to);
-        }
+            Gizmos.color = Color.blue;
+            if (_startNode.HasValue)
+                Gizmos.DrawCube(_navmesh.GridToWorldPosition(_startNode.Value.GridPosition), _navmesh.NodeSize);
 
-        public void StartSearchingPath(GridNode from, GridNode to)
-        {
-            // Initial setup
-            _startNode = from; _targetNode = to;
-            Status = PathfinderStatus.SearchingForAPath;
-            _closedList.Clear();
-            _openList.Clear();
-            _openList.Add(
-                new PathNode(_startNode.Value)
-            );
+            Gizmos.color = Color.green;
+            if (_targetNode.HasValue)
+                Gizmos.DrawCube(_navmesh.GridToWorldPosition(_targetNode.Value.GridPosition), _navmesh.NodeSize);
         }
         #endregion
-
     }
 }
