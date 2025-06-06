@@ -31,11 +31,101 @@ namespace DQWorks.Tests.AI.Pathfinding
         public void TestCanFindPathToNeighbors() { throw new System.NotImplementedException(); }
         public void TestCanFindPathWhenGridHasBlockedNodes() { throw new System.NotImplementedException(); }
         // Negative tests //
-        public void TestCantFindPathFromBlockedNode() { throw new System.NotImplementedException(); }
-        public void TestCantFindImpossiblePaths() { throw new System.NotImplementedException(); }
-        public void TestCantFindPathToBlockedNode() { throw new System.NotImplementedException(); }
-        public void TestCantPassThroughBlockedCorner() { throw new System.NotImplementedException(); }
-        public void TestPathDontIncludeAnyBlockedNode() { throw new System.NotImplementedException(); }
+        [TestCase] public void TestCantFindPathFromBlockedNode()
+        {
+            // Navmesh setup for the test
+            _navmesh.GridSize = new Vector2Int(3, 3);
+            _navmesh.Grid[0, 0].Walkable = false;
+
+            // Try to find the path from a blocked node
+            _finder.SearchPathInOneFrame(
+                _navmesh.GetNodeByGridPosition(new Vector2Int(0, 0)).Value,
+                _navmesh.GetNodeByGridPosition(new Vector2Int(2, 2)).Value
+            );
+
+            // Assert path was not found
+            Assert.AreEqual(PathfinderStatus.Impossible, _finder.Status);
+        }
+        [TestCase] public void TestCantFindImpossiblePaths()
+        {
+            // Navmesh setup for the test
+            // [ ] [X] [T]
+            // [ ] [X] [ ]
+            // [S] [X] [ ] 
+            _navmesh.GridSize = new Vector2Int(3, 3);
+            _navmesh.Grid[1, 0].Walkable = false;
+            _navmesh.Grid[1, 1].Walkable = false;
+            _navmesh.Grid[1, 2].Walkable = false;
+
+            // Try to find the path
+            _finder.SearchPathInOneFrame(
+                _navmesh.GetNodeByGridPosition(new Vector2Int(0, 0)).Value,
+                _navmesh.GetNodeByGridPosition(new Vector2Int(2, 2)).Value
+            );
+
+            // Assert path was not found
+            Assert.AreEqual(PathfinderStatus.Impossible, _finder.Status);
+        }
+        [TestCase] public void TestCantFindPathToBlockedNode()
+        {
+            // Navmesh setup for the test
+            _navmesh.GridSize = new Vector2Int(3, 3);
+            _navmesh.Grid[2, 2].Walkable = false;
+
+            // Try to find the path to a blocked node
+            _finder.SearchPathInOneFrame(
+                _navmesh.GetNodeByGridPosition(new Vector2Int(0, 0)).Value,
+                _navmesh.GetNodeByGridPosition(new Vector2Int(2, 2)).Value
+            );
+
+            // Assert path was not found
+            Assert.AreEqual(PathfinderStatus.Impossible, _finder.Status);
+        }
+        [TestCase] public void TestCantPassThroughBlockedCorner()
+        {
+            // Navmesh setup for the test
+            // [X] [ ] [T]
+            // [ ] [X] [ ]
+            // [S] [ ] [X] 
+            _navmesh.GridSize = new Vector2Int(3, 3);
+            _navmesh.Grid[0, 2].Walkable = false;
+            _navmesh.Grid[1, 1].Walkable = false;
+            _navmesh.Grid[2, 0].Walkable = false;
+
+            // Try to find the path
+            _finder.SearchPathInOneFrame(
+                _navmesh.GetNodeByGridPosition(new Vector2Int(0, 0)).Value,
+                _navmesh.GetNodeByGridPosition(new Vector2Int(2, 2)).Value
+            );
+
+            // Assert path was not found
+            Assert.AreEqual(PathfinderStatus.Impossible, _finder.Status);
+        }
+        [TestCase] public void TestPathDontIncludeAnyBlockedNode()
+        {
+            // Navmesh setup for the test
+            // [ ] [ ] [ ] [X] [T]
+            // [ ] [X] [ ] [X] [ ]
+            // [S] [X] [ ] [ ] [ ]
+            _navmesh.GridSize = new Vector2Int(5, 3);
+            _navmesh.Grid[1, 0].Walkable = false;
+            _navmesh.Grid[1, 1].Walkable = false;
+            _navmesh.Grid[3, 1].Walkable = false;
+            _navmesh.Grid[3, 2].Walkable = false;
+
+            // Try to find the path
+            _finder.SearchPathInOneFrame(
+                _navmesh.GetNodeByGridPosition(new Vector2Int(0, 0)).Value,
+                _navmesh.GetNodeByGridPosition(new Vector2Int(4, 2)).Value
+            );
+
+            // Assert path was found
+            Assert.AreEqual(PathfinderStatus.Found, _finder.Status);
+
+            // Assert none node in path is blocked
+            foreach (GridNode node in _finder.PathStack)
+                Assert.True(node.Walkable);
+        }
 
         //// Tests related to Pathfinder class behaviour
         [TestCase] public void TestSetNavmeshStopsPathfindingProcess()
