@@ -1,6 +1,6 @@
 {
     "name": "DQWorks.Tests.AI",
-    "rootNamespace": "DQWorks.Tests",
+    "rootNamespace": "AI",
     "references": [
         "UnityEngine.TestRunner",
         "UnityEditor.TestRunner"
