@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Assets.Scripts.AI.Pathfinding
+namespace DQWorks.AI.Pathfinding
 {
     public struct GridNode
     {

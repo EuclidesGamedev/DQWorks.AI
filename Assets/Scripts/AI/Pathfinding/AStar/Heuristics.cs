@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Assets.Scripts.AI.Pathfinding.AStar
+namespace DQWorks.AI.Pathfinding.AStar
 {
     public static class Heuristics
     {
@@ -16,8 +16,8 @@ namespace Assets.Scripts.AI.Pathfinding.AStar
             );
 
             if (diffVector.x > diffVector.y)
-                return 14 * (diffVector.y) + 10 * (diffVector.x - diffVector.y);
-            return 14 * (diffVector.x) + 10 * (diffVector.y - diffVector.x);
+                return 14 * diffVector.y + 10 * (diffVector.x - diffVector.y);
+            return 14 * diffVector.x + 10 * (diffVector.y - diffVector.x);
         }
     }
 }

@@ -1,9 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
-using UnityEngine.Rendering;
 
-namespace Assets.Scripts.AI.Pathfinding
+namespace DQWorks.AI.Pathfinding
 {
     public class Navmesh2D : MonoBehaviour
     {

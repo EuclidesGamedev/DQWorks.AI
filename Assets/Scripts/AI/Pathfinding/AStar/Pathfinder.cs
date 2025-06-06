@@ -1,10 +1,9 @@
-using Assets.Scripts.AI.Pathfinding;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace Assets.Scripts.AI.Pathfinding.AStar
+namespace DQWorks.AI.Pathfinding.AStar
 {
     public enum PathfinderStatus
     {
