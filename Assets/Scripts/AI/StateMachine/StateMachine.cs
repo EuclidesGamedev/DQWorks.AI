@@ -3,14 +3,14 @@ using UnityEngine;
 
 namespace DQWorks.AI.StateMachine
 {
-    public class StateMachine : MonoBehaviour
+    public abstract class StateMachine<TState> : MonoBehaviour where TState: IState
     {
         #region Getters and setters
-        public IState CurrentState { get; private set; }
+        public TState CurrentState { get; private set; }
         #endregion
 
         #region StateMachine
-        public void Initialize(IState state)
+        public void Initialize(TState state)
         {
             if (CurrentState != null)
                 return;
@@ -18,7 +18,7 @@ namespace DQWorks.AI.StateMachine
             CurrentState.Enter();
         }
 
-        public void Transition(IState newState)
+        public void Transition(TState newState)
         {
             if (CurrentState != null)
                 CurrentState.Exit();
