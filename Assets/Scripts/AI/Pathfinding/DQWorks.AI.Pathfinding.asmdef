@@ -1,6 +1,6 @@
 {
     "name": "DQWorks.AI.Pathfinding",
-    "rootNamespace": "Pathfinding",
+    "rootNamespace": "DQWorks.AI.Pathfinding",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],

@@ -1,6 +1,6 @@
 {
     "name": "DQWorks.Tests.AI.Pathfinding",
-    "rootNamespace": "Pathfinding",
+    "rootNamespace": "DQWorks.Tests.AI.Pathfinding",
     "references": [
         "UnityEngine.TestRunner",
         "UnityEditor.TestRunner",
