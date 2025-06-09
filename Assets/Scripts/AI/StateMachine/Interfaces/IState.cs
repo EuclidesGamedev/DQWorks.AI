@@ -5,7 +5,5 @@ namespace DQWorks.AI.StateMachine.Interfaces
     {
         void Enter();
         void Exit();
-        void FixedUpdate();
-        void Update();
     }
 }

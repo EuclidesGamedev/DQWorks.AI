@@ -9,11 +9,6 @@ namespace DQWorks.AI.StateMachine
         public IState CurrentState { get; private set; }
         #endregion
 
-        #region MonoBehaviour
-        private void FixedUpdate() => CurrentState?.FixedUpdate();
-        private void Update() => CurrentState?.Update();
-        #endregion
-
         #region StateMachine
         public void Initialize(IState state)
         {
