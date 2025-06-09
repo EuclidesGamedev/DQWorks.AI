@@ -14,16 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 0
-    y: 43
-    width: 1920
-    height: 997
+    x: 8
+    y: 51
+    width: 1904
+    height: 981
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Project
   m_RootView: {fileID: 10}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
-  m_Maximized: 1
+  m_Maximized: 0
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -41,8 +41,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 460
-    height: 426
+    width: 456
+    height: 419
   m_MinSize: {x: 52, y: 76}
   m_MaxSize: {x: 4002, y: 4026}
   m_ActualView: {fileID: 16}
@@ -50,7 +50,7 @@ MonoBehaviour:
   - {fileID: 16}
   - {fileID: 17}
   m_Selected: 0
-  m_LastSelected: 0
+  m_LastSelected: 1
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -69,13 +69,13 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 515
-    width: 958
-    height: 426
+    y: 506
+    width: 950
+    height: 419
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 145
+  controlID: 149
   draggingID: 0
 --- !u!114 &4
 MonoBehaviour:
@@ -94,8 +94,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 460
-    height: 515
+    width: 456
+    height: 506
   m_MinSize: {x: 232, y: 276}
   m_MaxSize: {x: 10002, y: 10026}
   m_ActualView: {fileID: 21}
@@ -122,12 +122,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 958
-    height: 515
+    width: 950
+    height: 506
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 93
+  controlID: 96
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -144,10 +144,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 460
+    x: 456
     y: 0
-    width: 498
-    height: 515
+    width: 494
+    height: 506
   m_MinSize: {x: 201, y: 226}
   m_MaxSize: {x: 4001, y: 4026}
   m_ActualView: {fileID: 24}
@@ -172,14 +172,14 @@ MonoBehaviour:
   - {fileID: 3}
   m_Position:
     serializedVersion: 2
-    x: 962
+    x: 954
     y: 0
-    width: 958
-    height: 941
+    width: 950
+    height: 925
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 92
+  controlID: 95
   draggingID: 0
 --- !u!114 &8
 MonoBehaviour:
@@ -198,8 +198,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 962
-    height: 485
+    width: 954
+    height: 477
   m_MinSize: {x: 201, y: 226}
   m_MaxSize: {x: 4001, y: 4026}
   m_ActualView: {fileID: 22}
@@ -227,12 +227,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 962
-    height: 941
+    width: 954
+    height: 925
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 17
+  controlID: 46
   draggingID: 0
 --- !u!114 &10
 MonoBehaviour:
@@ -254,8 +254,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1920
-    height: 997
+    width: 1904
+    height: 981
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
@@ -279,7 +279,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1920
+    width: 1904
     height: 36
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -303,12 +303,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 36
-    width: 1920
-    height: 941
+    width: 1904
+    height: 925
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 91
+  controlID: 94
   draggingID: 0
 --- !u!114 &13
 MonoBehaviour:
@@ -326,8 +326,8 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 977
-    width: 1920
+    y: 961
+    width: 1904
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -347,9 +347,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 485
-    width: 962
-    height: 456
+    y: 477
+    width: 954
+    height: 448
   m_MinSize: {x: 201, y: 226}
   m_MaxSize: {x: 4001, y: 4026}
   m_ActualView: {fileID: 23}
@@ -373,10 +373,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 460
+    x: 456
     y: 0
-    width: 498
-    height: 426
+    width: 494
+    height: 419
   m_MinSize: {x: 276, y: 76}
   m_MaxSize: {x: 4001, y: 4026}
   m_ActualView: {fileID: 20}
@@ -407,8 +407,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1
     y: 24
-    width: 458
-    height: 400
+    width: 454
+    height: 393
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -443,9 +443,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 962
-    y: 594
-    width: 459
-    height: 400
+    y: 593
+    width: 454
+    height: 393
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -458,22 +458,22 @@ MonoBehaviour:
     m_ContainerData: []
     m_OverlaysVisible: 1
   m_Spl:
-    ID: 146
-    splitterInitialOffset: 0
+    ID: 158
+    splitterInitialOffset: 154
     currentActiveSplitter: -1
     realSizes:
-    - 247
-    - 83
+    - 102
+    - 221
     relativeSizes:
-    - 0.75
-    - 0.25
+    - 0.3151515
+    - 0.6848485
     minSizes:
     - 32
     - 32
     maxSizes:
     - 0
     - 0
-    lastTotalSize: 330
+    lastTotalSize: 323
     splitSize: 6
     xOffset: 0
     m_Version: 1
@@ -481,11 +481,11 @@ MonoBehaviour:
     oldMinSizes: 
     oldMaxSizes: 
     oldSplitSize: 0
-  m_TestTypeToolbarIndex: 0
+  m_TestTypeToolbarIndex: 1
   m_TestListGUIs:
   - m_Window: {fileID: 17}
     runProgress:
-      RunGuid: 
+      RunGuid: bb54bbd0-7917-4130-aee2-28426d09fc0e
       ExecutionSettings:
         m_TargetPlatform: 0
         m_HasTargetPlatform: 0
@@ -495,9 +495,15 @@ MonoBehaviour:
           groupNames: []
           categoryNames: []
           assemblyNames: []
-        filters: []
+        filters:
+        - testMode: 2
+          testNames: []
+          groupNames:
+          - .*
+          categoryNames: []
+          assemblyNames: []
         runSynchronously: 0
-        playerHeartbeatTimeout: 0
+        playerHeartbeatTimeout: 600
         orderedTestNames: []
         ignoreTests: []
         featureFlags:
@@ -506,9 +512,9 @@ MonoBehaviour:
           strictDomainReload: 0
           disableNestedEnumeratorBugfix: 0
         randomOrderSeed: 0
-      HasFinished: 0
-      Progress: 0
-      CurrentStepName: 
+      HasFinished: 1
+      Progress: 0.99999976
+      CurrentStepName: Unlock Reload Assemblies
       CurrentStageName: 
     m_NewResultList:
     - id: 1000
@@ -561,9 +567,9 @@ MonoBehaviour:
       availableCategories:
       - Uncategorized
     m_SelectedOption: 0
-  - m_Window: {fileID: 0}
+  - m_Window: {fileID: 17}
     runProgress:
-      RunGuid: 
+      RunGuid: bb54bbd0-7917-4130-aee2-28426d09fc0e
       ExecutionSettings:
         m_TargetPlatform: 0
         m_HasTargetPlatform: 0
@@ -573,9 +579,15 @@ MonoBehaviour:
           groupNames: []
           categoryNames: []
           assemblyNames: []
-        filters: []
+        filters:
+        - testMode: 2
+          testNames: []
+          groupNames:
+          - .*
+          categoryNames: []
+          assemblyNames: []
         runSynchronously: 0
-        playerHeartbeatTimeout: 0
+        playerHeartbeatTimeout: 600
         orderedTestNames: []
         ignoreTests: []
         featureFlags:
@@ -584,18 +596,526 @@ MonoBehaviour:
           strictDomainReload: 0
           disableNestedEnumeratorBugfix: 0
         randomOrderSeed: 0
-      HasFinished: 0
-      Progress: 0
-      CurrentStepName: 
+      HasFinished: 1
+      Progress: 0.99999976
+      CurrentStepName: Unlock Reload Assemblies
       CurrentStageName: 
-    m_NewResultList: []
-    m_ResultText: 
+    m_NewResultList:
+    - id: 1000
+      uniqueId: '[Pathfinding2D][suite]'
+      name: Pathfinding2D
+      fullName: Pathfinding2D
+      resultStatus: 1
+      duration: 0.665613
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 
+      parentUniqueId: 
+    - id: 1026
+      uniqueId: '[DQWorks.Tests.AI.Pathfinding.dll][suite]'
+      name: DQWorks.Tests.AI.Pathfinding.dll
+      fullName: C:/Users/William/Workspace/Pathfinding2D/Library/ScriptAssemblies/DQWorks.Tests.AI.Pathfinding.dll
+      resultStatus: 1
+      duration: 0.665613
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1000
+      parentUniqueId: '[Pathfinding2D][suite]'
+    - id: 1027
+      uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/[DQWorks][suite]'
+      name: DQWorks
+      fullName: DQWorks
+      resultStatus: 1
+      duration: 0.665613
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1026
+      parentUniqueId: '[DQWorks.Tests.AI.Pathfinding.dll][suite]'
+    - id: 1028
+      uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/[Tests][suite]'
+      name: Tests
+      fullName: DQWorks.Tests
+      resultStatus: 1
+      duration: 0.665613
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1027
+      parentUniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/[DQWorks][suite]'
+    - id: 1029
+      uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/[AI][suite]'
+      name: AI
+      fullName: DQWorks.Tests.AI
+      resultStatus: 1
+      duration: 0.665613
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1028
+      parentUniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/[Tests][suite]'
+    - id: 1030
+      uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding][suite]'
+      name: Pathfinding
+      fullName: DQWorks.Tests.AI.Pathfinding
+      resultStatus: 1
+      duration: 0.665613
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1029
+      parentUniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/[AI][suite]'
+    - id: 1001
+      uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests][suite]'
+      name: PathfinderTests
+      fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests
+      resultStatus: 1
+      duration: 0.665613
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1030
+      parentUniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding][suite]'
+    - id: 1003
+      uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathInLargeGrids][suite]'
+      name: TestCanFindPathInLargeGrids
+      fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathInLargeGrids
+      resultStatus: 1
+      duration: 0.6508613
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1001
+      parentUniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests][suite]'
+    - id: 1002
+      uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/TestCanFindPathInLargeGrids/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathInLargeGrids()]'
+      name: TestCanFindPathInLargeGrids()
+      fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathInLargeGrids()
+      resultStatus: 1
+      duration: 0.6508613
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1003
+      parentUniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathInLargeGrids][suite]'
+    - id: 1005
+      uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathInSmallGrids][suite]'
+      name: TestCanFindPathInSmallGrids
+      fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathInSmallGrids
+      resultStatus: 1
+      duration: 0.0064376
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1001
+      parentUniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests][suite]'
+    - id: 1004
+      uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/TestCanFindPathInSmallGrids/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathInSmallGrids()]'
+      name: TestCanFindPathInSmallGrids()
+      fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathInSmallGrids()
+      resultStatus: 1
+      duration: 0.0064376
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1005
+      parentUniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathInSmallGrids][suite]'
+    - id: 1007
+      uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathToItself][suite]'
+      name: TestCanFindPathToItself
+      fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathToItself
+      resultStatus: 1
+      duration: 0.000516
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1001
+      parentUniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests][suite]'
+    - id: 1006
+      uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/TestCanFindPathToItself/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathToItself()]'
+      name: TestCanFindPathToItself()
+      fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathToItself()
+      resultStatus: 1
+      duration: 0.000516
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1007
+      parentUniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathToItself][suite]'
+    - id: 1009
+      uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathToNeighbors][suite]'
+      name: TestCanFindPathToNeighbors
+      fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathToNeighbors
+      resultStatus: 1
+      duration: 0.001941
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1001
+      parentUniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests][suite]'
+    - id: 1008
+      uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/TestCanFindPathToNeighbors/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathToNeighbors()]'
+      name: TestCanFindPathToNeighbors()
+      fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathToNeighbors()
+      resultStatus: 1
+      duration: 0.001941
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1009
+      parentUniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathToNeighbors][suite]'
+    - id: 1011
+      uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathWhenGridHasBlockedNodes][suite]'
+      name: TestCanFindPathWhenGridHasBlockedNodes
+      fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathWhenGridHasBlockedNodes
+      resultStatus: 1
+      duration: 0.0008229
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1001
+      parentUniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests][suite]'
+    - id: 1010
+      uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/TestCanFindPathWhenGridHasBlockedNodes/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathWhenGridHasBlockedNodes()]'
+      name: TestCanFindPathWhenGridHasBlockedNodes()
+      fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathWhenGridHasBlockedNodes()
+      resultStatus: 1
+      duration: 0.0008229
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1011
+      parentUniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathWhenGridHasBlockedNodes][suite]'
+    - id: 1015
+      uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCantFindImpossiblePaths][suite]'
+      name: TestCantFindImpossiblePaths
+      fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCantFindImpossiblePaths
+      resultStatus: 1
+      duration: 0.0006287
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1001
+      parentUniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests][suite]'
+    - id: 1004
+      uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/TestCantFindImpossiblePaths/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCantFindImpossiblePaths()]'
+      name: TestCantFindImpossiblePaths()
+      fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCantFindImpossiblePaths()
+      resultStatus: 1
+      duration: 0.0006287
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1005
+      parentUniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCantFindImpossiblePaths][suite]'
+    - id: 1013
+      uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCantFindPathFromBlockedNode][suite]'
+      name: TestCantFindPathFromBlockedNode
+      fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCantFindPathFromBlockedNode
+      resultStatus: 1
+      duration: 0.0006964
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1001
+      parentUniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests][suite]'
+    - id: 1002
+      uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/TestCantFindPathFromBlockedNode/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCantFindPathFromBlockedNode()]'
+      name: TestCantFindPathFromBlockedNode()
+      fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCantFindPathFromBlockedNode()
+      resultStatus: 1
+      duration: 0.0006964
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1003
+      parentUniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCantFindPathFromBlockedNode][suite]'
+    - id: 1017
+      uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCantFindPathToBlockedNode][suite]'
+      name: TestCantFindPathToBlockedNode
+      fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCantFindPathToBlockedNode
+      resultStatus: 1
+      duration: 0.0005295
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1001
+      parentUniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests][suite]'
+    - id: 1004
+      uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/TestCantFindPathToBlockedNode/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCantFindPathToBlockedNode()]'
+      name: TestCantFindPathToBlockedNode()
+      fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCantFindPathToBlockedNode()
+      resultStatus: 1
+      duration: 0.0005295
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1005
+      parentUniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCantFindPathToBlockedNode][suite]'
+    - id: 1019
+      uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCantPassThroughBlockedCorner][suite]'
+      name: TestCantPassThroughBlockedCorner
+      fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCantPassThroughBlockedCorner
+      resultStatus: 1
+      duration: 0.0006623
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1001
+      parentUniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests][suite]'
+    - id: 1008
+      uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/TestCantPassThroughBlockedCorner/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCantPassThroughBlockedCorner()]'
+      name: TestCantPassThroughBlockedCorner()
+      fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCantPassThroughBlockedCorner()
+      resultStatus: 1
+      duration: 0.0006623
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1009
+      parentUniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCantPassThroughBlockedCorner][suite]'
+    - id: 1021
+      uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestPathDontIncludeAnyBlockedNode][suite]'
+      name: TestPathDontIncludeAnyBlockedNode
+      fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestPathDontIncludeAnyBlockedNode
+      resultStatus: 1
+      duration: 0.0013228
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1001
+      parentUniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests][suite]'
+    - id: 1010
+      uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/TestPathDontIncludeAnyBlockedNode/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestPathDontIncludeAnyBlockedNode()]'
+      name: TestPathDontIncludeAnyBlockedNode()
+      fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestPathDontIncludeAnyBlockedNode()
+      resultStatus: 1
+      duration: 0.0013228
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1011
+      parentUniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestPathDontIncludeAnyBlockedNode][suite]'
+    - id: 1023
+      uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestSetNavmeshStopsPathfindingProcess][suite]'
+      name: TestSetNavmeshStopsPathfindingProcess
+      fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestSetNavmeshStopsPathfindingProcess
+      resultStatus: 1
+      duration: 0.000562
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1001
+      parentUniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests][suite]'
+    - id: 1002
+      uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/TestSetNavmeshStopsPathfindingProcess/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestSetNavmeshStopsPathfindingProcess()]'
+      name: TestSetNavmeshStopsPathfindingProcess()
+      fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestSetNavmeshStopsPathfindingProcess()
+      resultStatus: 1
+      duration: 0.000562
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1003
+      parentUniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestSetNavmeshStopsPathfindingProcess][suite]'
+    - id: 1025
+      uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestStopPathfindingSetsStatusToImpossible][suite]'
+      name: TestStopPathfindingSetsStatusToImpossible
+      fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestStopPathfindingSetsStatusToImpossible
+      resultStatus: 1
+      duration: 0.0006325
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1001
+      parentUniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests][suite]'
+    - id: 1004
+      uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/TestStopPathfindingSetsStatusToImpossible/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestStopPathfindingSetsStatusToImpossible()]'
+      name: TestStopPathfindingSetsStatusToImpossible()
+      fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestStopPathfindingSetsStatusToImpossible()
+      resultStatus: 1
+      duration: 0.0006325
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1005
+      parentUniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestStopPathfindingSetsStatusToImpossible][suite]'
+    m_ResultText: Pathfinding2D (12 tests) (0,666s)
     m_ResultStacktrace: 
     m_TestListState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 
+      scrollPos: {x: 0, y: 120}
+      m_SelectedIDs: d843a30d
+      m_LastClickedID: 228803544
+      m_ExpandedIDs: 8402b691216627992a175dc332119ac5682de9cbcadba5d9415e94eeef6c9af8b4aaa1f8c01bf2f829beac016071ea01a9796f055857e00bd843a30de0b50812805551219ba07a316d19ba325cdd903370e1e23da9779b4844ff6c4ca4e4dd6e0f26126ff16d4878da88277dffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -620,11 +1140,12 @@ MonoBehaviour:
       NotRunHidden: 0
       m_SearchString: 
       selectedCategories: []
-      availableCategories: []
+      availableCategories:
+      - Uncategorized
     m_SelectedOption: 0
-  - m_Window: {fileID: 0}
+  - m_Window: {fileID: 17}
     runProgress:
-      RunGuid: 
+      RunGuid: bb54bbd0-7917-4130-aee2-28426d09fc0e
       ExecutionSettings:
         m_TargetPlatform: 0
         m_HasTargetPlatform: 0
@@ -634,9 +1155,15 @@ MonoBehaviour:
           groupNames: []
           categoryNames: []
           assemblyNames: []
-        filters: []
+        filters:
+        - testMode: 2
+          testNames: []
+          groupNames:
+          - .*
+          categoryNames: []
+          assemblyNames: []
         runSynchronously: 0
-        playerHeartbeatTimeout: 0
+        playerHeartbeatTimeout: 600
         orderedTestNames: []
         ignoreTests: []
         featureFlags:
@@ -645,18 +1172,526 @@ MonoBehaviour:
           strictDomainReload: 0
           disableNestedEnumeratorBugfix: 0
         randomOrderSeed: 0
-      HasFinished: 0
-      Progress: 0
-      CurrentStepName: 
+      HasFinished: 1
+      Progress: 0.99999976
+      CurrentStepName: Unlock Reload Assemblies
       CurrentStageName: 
-    m_NewResultList: []
+    m_NewResultList:
+    - id: 1000
+      uniqueId: '[Pathfinding2D][suite]'
+      name: Pathfinding2D
+      fullName: Pathfinding2D
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 
+      parentUniqueId: 
+    - id: 1026
+      uniqueId: '[DQWorks.Tests.AI.Pathfinding.dll][suite]'
+      name: DQWorks.Tests.AI.Pathfinding.dll
+      fullName: C:/Users/William/Workspace/Pathfinding2D/Library/ScriptAssemblies/DQWorks.Tests.AI.Pathfinding.dll
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1000
+      parentUniqueId: '[Pathfinding2D][suite]'
+    - id: 1027
+      uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/[DQWorks][suite]'
+      name: DQWorks
+      fullName: DQWorks
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1026
+      parentUniqueId: '[DQWorks.Tests.AI.Pathfinding.dll][suite]'
+    - id: 1028
+      uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/[Tests][suite]'
+      name: Tests
+      fullName: DQWorks.Tests
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1027
+      parentUniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/[DQWorks][suite]'
+    - id: 1029
+      uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/[AI][suite]'
+      name: AI
+      fullName: DQWorks.Tests.AI
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1028
+      parentUniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/[Tests][suite]'
+    - id: 1030
+      uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding][suite]'
+      name: Pathfinding
+      fullName: DQWorks.Tests.AI.Pathfinding
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1029
+      parentUniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/[AI][suite]'
+    - id: 1001
+      uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests][suite]'
+      name: PathfinderTests
+      fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1030
+      parentUniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding][suite]'
+    - id: 1003
+      uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathInLargeGrids][suite]'
+      name: TestCanFindPathInLargeGrids
+      fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathInLargeGrids
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1001
+      parentUniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests][suite]'
+    - id: 1002
+      uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/TestCanFindPathInLargeGrids/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathInLargeGrids()]'
+      name: TestCanFindPathInLargeGrids()
+      fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathInLargeGrids()
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1003
+      parentUniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathInLargeGrids][suite]'
+    - id: 1005
+      uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathInSmallGrids][suite]'
+      name: TestCanFindPathInSmallGrids
+      fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathInSmallGrids
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1001
+      parentUniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests][suite]'
+    - id: 1004
+      uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/TestCanFindPathInSmallGrids/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathInSmallGrids()]'
+      name: TestCanFindPathInSmallGrids()
+      fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathInSmallGrids()
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1005
+      parentUniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathInSmallGrids][suite]'
+    - id: 1007
+      uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathToItself][suite]'
+      name: TestCanFindPathToItself
+      fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathToItself
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1001
+      parentUniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests][suite]'
+    - id: 1006
+      uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/TestCanFindPathToItself/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathToItself()]'
+      name: TestCanFindPathToItself()
+      fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathToItself()
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1007
+      parentUniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathToItself][suite]'
+    - id: 1009
+      uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathToNeighbors][suite]'
+      name: TestCanFindPathToNeighbors
+      fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathToNeighbors
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1001
+      parentUniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests][suite]'
+    - id: 1008
+      uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/TestCanFindPathToNeighbors/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathToNeighbors()]'
+      name: TestCanFindPathToNeighbors()
+      fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathToNeighbors()
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1009
+      parentUniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathToNeighbors][suite]'
+    - id: 1011
+      uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathWhenGridHasBlockedNodes][suite]'
+      name: TestCanFindPathWhenGridHasBlockedNodes
+      fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathWhenGridHasBlockedNodes
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1001
+      parentUniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests][suite]'
+    - id: 1010
+      uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/TestCanFindPathWhenGridHasBlockedNodes/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathWhenGridHasBlockedNodes()]'
+      name: TestCanFindPathWhenGridHasBlockedNodes()
+      fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathWhenGridHasBlockedNodes()
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1011
+      parentUniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathWhenGridHasBlockedNodes][suite]'
+    - id: 1015
+      uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCantFindImpossiblePaths][suite]'
+      name: TestCantFindImpossiblePaths
+      fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCantFindImpossiblePaths
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1001
+      parentUniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests][suite]'
+    - id: 1014
+      uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/TestCantFindImpossiblePaths/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCantFindImpossiblePaths()]'
+      name: TestCantFindImpossiblePaths()
+      fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCantFindImpossiblePaths()
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1015
+      parentUniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCantFindImpossiblePaths][suite]'
+    - id: 1013
+      uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCantFindPathFromBlockedNode][suite]'
+      name: TestCantFindPathFromBlockedNode
+      fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCantFindPathFromBlockedNode
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1001
+      parentUniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests][suite]'
+    - id: 1012
+      uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/TestCantFindPathFromBlockedNode/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCantFindPathFromBlockedNode()]'
+      name: TestCantFindPathFromBlockedNode()
+      fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCantFindPathFromBlockedNode()
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1013
+      parentUniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCantFindPathFromBlockedNode][suite]'
+    - id: 1017
+      uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCantFindPathToBlockedNode][suite]'
+      name: TestCantFindPathToBlockedNode
+      fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCantFindPathToBlockedNode
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1001
+      parentUniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests][suite]'
+    - id: 1016
+      uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/TestCantFindPathToBlockedNode/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCantFindPathToBlockedNode()]'
+      name: TestCantFindPathToBlockedNode()
+      fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCantFindPathToBlockedNode()
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1017
+      parentUniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCantFindPathToBlockedNode][suite]'
+    - id: 1019
+      uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCantPassThroughBlockedCorner][suite]'
+      name: TestCantPassThroughBlockedCorner
+      fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCantPassThroughBlockedCorner
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1001
+      parentUniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests][suite]'
+    - id: 1018
+      uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/TestCantPassThroughBlockedCorner/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCantPassThroughBlockedCorner()]'
+      name: TestCantPassThroughBlockedCorner()
+      fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCantPassThroughBlockedCorner()
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1019
+      parentUniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCantPassThroughBlockedCorner][suite]'
+    - id: 1021
+      uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestPathDontIncludeAnyBlockedNode][suite]'
+      name: TestPathDontIncludeAnyBlockedNode
+      fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestPathDontIncludeAnyBlockedNode
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1001
+      parentUniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests][suite]'
+    - id: 1020
+      uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/TestPathDontIncludeAnyBlockedNode/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestPathDontIncludeAnyBlockedNode()]'
+      name: TestPathDontIncludeAnyBlockedNode()
+      fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestPathDontIncludeAnyBlockedNode()
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1021
+      parentUniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestPathDontIncludeAnyBlockedNode][suite]'
+    - id: 1023
+      uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestSetNavmeshStopsPathfindingProcess][suite]'
+      name: TestSetNavmeshStopsPathfindingProcess
+      fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestSetNavmeshStopsPathfindingProcess
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1001
+      parentUniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests][suite]'
+    - id: 1022
+      uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/TestSetNavmeshStopsPathfindingProcess/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestSetNavmeshStopsPathfindingProcess()]'
+      name: TestSetNavmeshStopsPathfindingProcess()
+      fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestSetNavmeshStopsPathfindingProcess()
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1023
+      parentUniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestSetNavmeshStopsPathfindingProcess][suite]'
+    - id: 1025
+      uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestStopPathfindingSetsStatusToImpossible][suite]'
+      name: TestStopPathfindingSetsStatusToImpossible
+      fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestStopPathfindingSetsStatusToImpossible
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1001
+      parentUniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests][suite]'
+    - id: 1024
+      uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/TestStopPathfindingSetsStatusToImpossible/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestStopPathfindingSetsStatusToImpossible()]'
+      name: TestStopPathfindingSetsStatusToImpossible()
+      fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestStopPathfindingSetsStatusToImpossible()
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1025
+      parentUniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestStopPathfindingSetsStatusToImpossible][suite]'
     m_ResultText: 
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 
+      m_SelectedIDs: d843a30d
+      m_LastClickedID: 228803544
+      m_ExpandedIDs: d843a30dffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -681,7 +1716,8 @@ MonoBehaviour:
       NotRunHidden: 0
       m_SearchString: 
       selectedCategories: []
-      availableCategories: []
+      availableCategories:
+      - Uncategorized
     m_SelectedOption: 0
 --- !u!114 &18
 MonoBehaviour:
@@ -774,7 +1810,7 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 44734
+  m_LastSelectedObjectID: 44744
 --- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -796,10 +1832,10 @@ MonoBehaviour:
     m_TextWithWhitespace: "Inspector\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 461
+    x: 457
     y: 24
-    width: 497
-    height: 400
+    width: 493
+    height: 393
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -847,8 +1883,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1
     y: 24
-    width: 458
-    height: 489
+    width: 454
+    height: 480
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -871,7 +1907,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/AI/Pathfinding/AStar
+    - Assets/Scripts/AI/StateMachine/Interfaces
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -890,7 +1926,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: e4b00000
     m_LastClickedID: 45284
-    m_ExpandedIDs: 0000000016af000018af00001aaf00001caf00001eaf000020af0000
+    m_ExpandedIDs: 0000000020af000022af000024af000026af000028af00002aaf00002caf00002eaf000030af000032af000034af0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -919,7 +1955,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000016af000018af00001aaf00001caf00001eaf000020af0000
+    m_ExpandedIDs: 0000000020af000022af000024af000026af000028af00002aaf00002caf00002eaf000030af000032af000034af0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1000,8 +2036,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 24
-    width: 961
-    height: 459
+    width: 953
+    height: 451
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1055,23 +2091,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 961
-      height: 438
-    m_Scale: {x: 0.42239538, y: 0.42239535}
-    m_Translation: {x: 480.5, y: 221.30649}
+      width: 953
+      height: 430
+    m_Scale: {x: 0.4427855, y: 0.4427855}
+    m_Translation: {x: 476.5, y: 213.8066}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -1137.5598
-      y: -523.9321
-      width: 2275.1196
-      height: 1036.9432
+      x: -1076.1418
+      y: -482.8672
+      width: 2152.2837
+      height: 971.1248
     m_MinimalGUI: 1
-  m_defaultScale: 0.40555555
-  m_LastWindowPixelSize: {x: 961, y: 459}
+  m_defaultScale: 0.39814815
+  m_LastWindowPixelSize: {x: 953, y: 451}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -1100,9 +2136,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 509
-    width: 961
-    height: 430
+    y: 501
+    width: 953
+    height: 422
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1545,9 +2581,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: -2.9978485, y: -1.047567, z: 0.030155253}
+    m_Target: {x: -6.281681, y: -2.4152472, z: 0.020726161}
     speed: 2
-    m_Value: {x: -2.9978485, y: -1.047567, z: 0.030155253}
+    m_Value: {x: -6.281681, y: -2.4152472, z: 0.020726161}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1597,9 +2633,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 6.9844885
+    m_Target: 7.9273944
     speed: 2
-    m_Value: 6.9844885
+    m_Value: 7.9273944
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1654,10 +2690,10 @@ MonoBehaviour:
     m_TextWithWhitespace: "Hierarchy\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 461
+    x: 457
     y: 24
-    width: 497
-    height: 489
+    width: 493
+    height: 480
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1674,7 +2710,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 0cfbffffc4ae0000
+      m_ExpandedIDs: d0d9ffff0cfbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
