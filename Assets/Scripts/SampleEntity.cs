@@ -6,7 +6,7 @@ public class SampleEntity : MonoBehaviour
 {
     private void Awake()
     {
-        var fsm = GetComponent<StateMachine<IState>>();
+        var fsm = GetComponent<GenericStateMachine<ISimpleState>>();
         fsm.Initialize(new SampleState());
     }
 }

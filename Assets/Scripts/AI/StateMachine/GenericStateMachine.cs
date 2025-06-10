@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace DQWorks.AI.StateMachine
 {
-    public abstract class StateMachine<TState> : MonoBehaviour where TState: IState
+    public abstract class GenericStateMachine<TState> : MonoBehaviour where TState: IStaticState
     {
         #region Getters and setters
         public TState CurrentState { get; private set; }
