@@ -1,7 +1,7 @@
 using DQWorks.AI.StateMachine.Interfaces;
 using UnityEngine;
 
-public class SampleState : ISimpleState
+public class SampleState : IPhysicsState
 {
     public void Enter() { Debug.Log("Joined in SampleState"); }
     public void Exit() { Debug.Log("Quited in SampleState"); }

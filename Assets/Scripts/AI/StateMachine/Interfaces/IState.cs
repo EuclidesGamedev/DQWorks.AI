@@ -1,7 +1,7 @@
 
 namespace DQWorks.AI.StateMachine.Interfaces
 {
-    public interface IStaticState
+    public interface IState
     {
         void Enter();
         void Exit();

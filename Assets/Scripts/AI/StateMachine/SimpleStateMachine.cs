@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace DQWorks.AI.StateMachine
 {
-    public class SimpleStateMachine : GenericStateMachine<ISimpleState>
+    public class SimpleStateMachine : StateMachine<ISimpleState>
     {
         #region MonoBehaviour
         private void Update() => CurrentState?.Update();

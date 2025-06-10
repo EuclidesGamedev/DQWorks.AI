@@ -1,7 +1,7 @@
 
 namespace DQWorks.AI.StateMachine.Interfaces
 {
-    public interface ISimpleState : IStaticState
+    public interface ISimpleState : IState
     {
         void Update();
     }
