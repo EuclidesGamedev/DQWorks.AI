@@ -1,31 +1,34 @@
+using DQWorks.AI.StateMachine;
 using NUnit.Framework;
 
 namespace DQWorks.Tests.AI.StateMachine
 {
-    public class StateMachineTests
+    public class SimpleStateMachineTests
     {
-        private DQWorks.AI.StateMachine.StateMachine _stateMachine;
-        private StateForTests _state1, _state2;
+        private SimpleStateMachine _stateMachine;
+        private SimpleStateForTests _state1, _state2;
 
         #region Setup for StateMachine tests
         [SetUp]
         public void SetUp()
         {
-            _state1 = new StateForTests();
-            _state2 = new StateForTests();
+            _state1 = new SimpleStateForTests();
+            _state2 = new SimpleStateForTests();
             _stateMachine = new();
         }
         #endregion
 
         #region StateMachine tests
-        [TestCase] public void TestEqualityOfStateInstances()
+        [TestCase]
+        public void TestEqualityOfStateInstances()
         {
             Assert.AreNotEqual(_state1, _state2);
             Assert.AreEqual(_state1, _state1);
             Assert.AreEqual(_state2, _state2);
         }
 
-        [TestCase] public void TestAssertInitializeMethodInvokesStateEnter()
+        [TestCase]
+        public void TestAssertInitializeMethodInvokesStateEnter()
         {
             // Setup for the test
             bool _calledEnter = false;
@@ -41,13 +44,15 @@ namespace DQWorks.Tests.AI.StateMachine
             Assert.AreEqual(_state1, _stateMachine.CurrentState);
             Assert.True(_calledEnter);
         }
-        
-        [TestCase] public void TestAssertStateMachinesInitialStateIsNull()
+
+        [TestCase]
+        public void TestAssertStateMachinesInitialStateIsNull()
         {
             // Assert initial state is null
             Assert.Null(_stateMachine.CurrentState);
         }
-        [TestCase] public void TestAssertTransitionChangesCurrentState()
+        [TestCase]
+        public void TestAssertTransitionChangesCurrentState()
         {
             // Setup for the test
             _stateMachine.Initialize(_state1);
@@ -61,8 +66,9 @@ namespace DQWorks.Tests.AI.StateMachine
             // Post-assertions
             Assert.AreEqual(_state2, _stateMachine.CurrentState);
         }
-        
-        [TestCase] public void TestAssertTransitionMethodInvokesStateEnter()
+
+        [TestCase]
+        public void TestAssertTransitionMethodInvokesStateEnter()
         {
             // Setup for the test
             bool _calledEnter = false;
@@ -79,8 +85,9 @@ namespace DQWorks.Tests.AI.StateMachine
             Assert.AreEqual(_state2, _stateMachine.CurrentState);
             Assert.True(_calledEnter);
         }
-        
-        [TestCase] public void TestAssertTransitionMethodInvokesStateExit()
+
+        [TestCase]
+        public void TestAssertTransitionMethodInvokesStateExit()
         {
             // Setup for the test
             bool _calledExit = false;
@@ -99,15 +106,17 @@ namespace DQWorks.Tests.AI.StateMachine
         }
 
 
-        [TestCase] public void TestCantInitializeNull()
+        [TestCase]
+        public void TestCantInitializeNull()
         {
             // Assert initialize null state throws an exception
             Assert.Throws<System.ArgumentNullException>(
                 () => _stateMachine.Initialize(null)
             );
         }
-        
-        [TestCase] public void TestCanTransitionToCurrentState()
+
+        [TestCase]
+        public void TestCanTransitionToCurrentState()
         {
             // Setup for the test
             bool _calledExit = false;
@@ -125,8 +134,9 @@ namespace DQWorks.Tests.AI.StateMachine
             Assert.AreEqual(_state1, _stateMachine.CurrentState);
             Assert.True(_calledExit);
         }
-        
-        [TestCase] public void TestCantTransitionToNull()
+
+        [TestCase]
+        public void TestCantTransitionToNull()
         {
             // Assert transition to null state throws an exception
             Assert.Throws<System.ArgumentNullException>(
