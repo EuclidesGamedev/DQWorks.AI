@@ -51,6 +51,7 @@ namespace DQWorks.Tests.AI.StateMachine
             // Assert initial state is null
             Assert.Null(_stateMachine.CurrentState);
         }
+
         [TestCase]
         public void TestAssertTransitionChangesCurrentState()
         {
@@ -104,7 +105,6 @@ namespace DQWorks.Tests.AI.StateMachine
             Assert.AreEqual(_state2, _stateMachine.CurrentState);
             Assert.True(_calledExit);
         }
-
 
         [TestCase]
         public void TestCantInitializeNull()
