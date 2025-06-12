@@ -13,6 +13,8 @@ namespace DQWorks.AI.StateMachine
         #region StateMachine
         public void Initialize(TState state)
         {
+            if (state == null)
+                throw new System.ArgumentNullException();
             if (CurrentState != null)
                 return;
             CurrentState = state;
@@ -21,6 +23,8 @@ namespace DQWorks.AI.StateMachine
 
         public void Transition(TState newState)
         {
+            if (newState == null)
+                throw new System.ArgumentNullException();
             if (CurrentState != null)
                 CurrentState.Exit();
             CurrentState = newState;

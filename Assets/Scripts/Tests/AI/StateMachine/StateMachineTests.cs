@@ -1,5 +1,4 @@
 using NUnit.Framework;
-using System;
 using UnityEngine;
 
 namespace DQWorks.Tests.AI.StateMachine
@@ -104,7 +103,7 @@ namespace DQWorks.Tests.AI.StateMachine
         [TestCase] public void TestCantInitializeNull()
         {
             // Assert initialize null state throws an exception
-            Assert.Throws<Exception>(
+            Assert.Throws<System.ArgumentNullException>(
                 () => _stateMachine.Initialize(null)
             );
         }
@@ -131,7 +130,7 @@ namespace DQWorks.Tests.AI.StateMachine
         [TestCase] public void TestCantTransitionToNull()
         {
             // Assert transition to null state throws an exception
-            Assert.Throws<Exception>(
+            Assert.Throws<System.ArgumentNullException>(
                 () => _stateMachine.Initialize(null)
             );
         }
