@@ -1,5 +1,4 @@
 using DQWorks.AI.StateMachine.Interfaces;
-using UnityEngine;
 using UnityEngine.Events;
 
 namespace DQWorks.Tests.AI.StateMachine
