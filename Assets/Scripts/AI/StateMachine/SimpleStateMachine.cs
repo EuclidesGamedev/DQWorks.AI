@@ -1,12 +1,13 @@
 using DQWorks.AI.StateMachine.Interfaces;
-using UnityEngine;
 
 namespace DQWorks.AI.StateMachine
 {
-    public class SimpleStateMachine : StateMachine<ISimpleState>
+    public abstract class SimpleStateMachine<TState> : StateMachine<TState> where TState : ISimpleState
     {
         #region MonoBehaviour
         private void Update() => CurrentState?.Update();
         #endregion
     }
+
+    public class SimpleStateMachine : SimpleStateMachine<ISimpleState> { }
 }

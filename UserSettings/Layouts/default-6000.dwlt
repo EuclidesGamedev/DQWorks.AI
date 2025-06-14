@@ -14,16 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 8
-    y: 51
-    width: 1904
-    height: 981
+    x: 0
+    y: 43
+    width: 1920
+    height: 997
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Game
   m_RootView: {fileID: 10}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
-  m_Maximized: 0
+  m_Maximized: 1
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -34,23 +34,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: TestRunnerWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 456
-    height: 419
+    width: 459
+    height: 426
   m_MinSize: {x: 52, y: 76}
   m_MaxSize: {x: 4002, y: 4026}
-  m_ActualView: {fileID: 16}
+  m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 16}
   - {fileID: 17}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -69,13 +69,13 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 506
-    width: 950
-    height: 419
+    y: 515
+    width: 958
+    height: 426
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 149
+  controlID: 145
   draggingID: 0
 --- !u!114 &4
 MonoBehaviour:
@@ -94,8 +94,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 456
-    height: 506
+    width: 459
+    height: 515
   m_MinSize: {x: 232, y: 276}
   m_MaxSize: {x: 10002, y: 10026}
   m_ActualView: {fileID: 21}
@@ -122,12 +122,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 950
-    height: 506
+    width: 958
+    height: 515
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 96
+  controlID: 94
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -144,10 +144,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 456
+    x: 459
     y: 0
-    width: 494
-    height: 506
+    width: 499
+    height: 515
   m_MinSize: {x: 201, y: 226}
   m_MaxSize: {x: 4001, y: 4026}
   m_ActualView: {fileID: 24}
@@ -172,14 +172,14 @@ MonoBehaviour:
   - {fileID: 3}
   m_Position:
     serializedVersion: 2
-    x: 954
+    x: 962
     y: 0
-    width: 950
-    height: 925
+    width: 958
+    height: 941
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 95
+  controlID: 144
   draggingID: 0
 --- !u!114 &8
 MonoBehaviour:
@@ -198,8 +198,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 954
-    height: 477
+    width: 962
+    height: 486
   m_MinSize: {x: 201, y: 226}
   m_MaxSize: {x: 4001, y: 4026}
   m_ActualView: {fileID: 22}
@@ -227,8 +227,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 954
-    height: 925
+    width: 962
+    height: 941
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
@@ -254,8 +254,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1904
-    height: 981
+    width: 1920
+    height: 997
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
@@ -279,7 +279,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1904
+    width: 1920
     height: 36
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -303,12 +303,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 36
-    width: 1904
-    height: 925
+    width: 1920
+    height: 941
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 94
+  controlID: 45
   draggingID: 0
 --- !u!114 &13
 MonoBehaviour:
@@ -326,8 +326,8 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 961
-    width: 1904
+    y: 977
+    width: 1920
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -347,9 +347,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 477
-    width: 954
-    height: 448
+    y: 486
+    width: 962
+    height: 455
   m_MinSize: {x: 201, y: 226}
   m_MaxSize: {x: 4001, y: 4026}
   m_ActualView: {fileID: 23}
@@ -373,10 +373,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 456
+    x: 459
     y: 0
-    width: 494
-    height: 419
+    width: 499
+    height: 426
   m_MinSize: {x: 276, y: 76}
   m_MaxSize: {x: 4001, y: 4026}
   m_ActualView: {fileID: 20}
@@ -405,10 +405,10 @@ MonoBehaviour:
     m_TextWithWhitespace: "Console\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1
-    y: 24
-    width: 454
-    height: 393
+    x: 962
+    y: 594
+    width: 457
+    height: 400
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -442,10 +442,10 @@ MonoBehaviour:
     m_TextWithWhitespace: "Test Runner\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 962
-    y: 593
-    width: 454
-    height: 393
+    x: 1
+    y: 24
+    width: 457
+    height: 400
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -458,12 +458,12 @@ MonoBehaviour:
     m_ContainerData: []
     m_OverlaysVisible: 1
   m_Spl:
-    ID: 158
+    ID: 235
     splitterInitialOffset: 154
     currentActiveSplitter: -1
     realSizes:
-    - 102
-    - 221
+    - 97
+    - 212
     relativeSizes:
     - 0.3151515
     - 0.6848485
@@ -473,7 +473,7 @@ MonoBehaviour:
     maxSizes:
     - 0
     - 0
-    lastTotalSize: 323
+    lastTotalSize: 309
     splitSize: 6
     xOffset: 0
     m_Version: 1
@@ -485,7 +485,7 @@ MonoBehaviour:
   m_TestListGUIs:
   - m_Window: {fileID: 17}
     runProgress:
-      RunGuid: bb54bbd0-7917-4130-aee2-28426d09fc0e
+      RunGuid: 5fe50062-519c-4008-85e0-9e24a6f24d1b
       ExecutionSettings:
         m_TargetPlatform: 0
         m_HasTargetPlatform: 0
@@ -513,7 +513,7 @@ MonoBehaviour:
           disableNestedEnumeratorBugfix: 0
         randomOrderSeed: 0
       HasFinished: 1
-      Progress: 0.99999976
+      Progress: 0.9999994
       CurrentStepName: Unlock Reload Assemblies
       CurrentStageName: 
     m_NewResultList:
@@ -569,7 +569,7 @@ MonoBehaviour:
     m_SelectedOption: 0
   - m_Window: {fileID: 17}
     runProgress:
-      RunGuid: bb54bbd0-7917-4130-aee2-28426d09fc0e
+      RunGuid: 5fe50062-519c-4008-85e0-9e24a6f24d1b
       ExecutionSettings:
         m_TargetPlatform: 0
         m_HasTargetPlatform: 0
@@ -597,7 +597,7 @@ MonoBehaviour:
           disableNestedEnumeratorBugfix: 0
         randomOrderSeed: 0
       HasFinished: 1
-      Progress: 0.99999976
+      Progress: 0.9999994
       CurrentStepName: Unlock Reload Assemblies
       CurrentStageName: 
     m_NewResultList:
@@ -606,7 +606,7 @@ MonoBehaviour:
       name: Pathfinding2D
       fullName: Pathfinding2D
       resultStatus: 1
-      duration: 0.665613
+      duration: 0.6235953
       messages: 
       output: 
       stacktrace: 
@@ -622,7 +622,7 @@ MonoBehaviour:
       name: DQWorks.Tests.AI.Pathfinding.dll
       fullName: C:/Users/William/Workspace/Pathfinding2D/Library/ScriptAssemblies/DQWorks.Tests.AI.Pathfinding.dll
       resultStatus: 1
-      duration: 0.665613
+      duration: 0.6059037
       messages: 
       output: 
       stacktrace: 
@@ -631,14 +631,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1000
+      parentId: 1101
       parentUniqueId: '[Pathfinding2D][suite]'
     - id: 1027
       uniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/[DQWorks][suite]'
       name: DQWorks
       fullName: DQWorks
       resultStatus: 1
-      duration: 0.665613
+      duration: 0.6059037
       messages: 
       output: 
       stacktrace: 
@@ -654,7 +654,7 @@ MonoBehaviour:
       name: Tests
       fullName: DQWorks.Tests
       resultStatus: 1
-      duration: 0.665613
+      duration: 0.6059037
       messages: 
       output: 
       stacktrace: 
@@ -670,7 +670,7 @@ MonoBehaviour:
       name: AI
       fullName: DQWorks.Tests.AI
       resultStatus: 1
-      duration: 0.665613
+      duration: 0.6059037
       messages: 
       output: 
       stacktrace: 
@@ -686,7 +686,7 @@ MonoBehaviour:
       name: Pathfinding
       fullName: DQWorks.Tests.AI.Pathfinding
       resultStatus: 1
-      duration: 0.665613
+      duration: 0.6059037
       messages: 
       output: 
       stacktrace: 
@@ -702,7 +702,7 @@ MonoBehaviour:
       name: PathfinderTests
       fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests
       resultStatus: 1
-      duration: 0.665613
+      duration: 0.6059037
       messages: 
       output: 
       stacktrace: 
@@ -718,7 +718,7 @@ MonoBehaviour:
       name: TestCanFindPathInLargeGrids
       fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathInLargeGrids
       resultStatus: 1
-      duration: 0.6508613
+      duration: 0.5968595
       messages: 
       output: 
       stacktrace: 
@@ -734,7 +734,7 @@ MonoBehaviour:
       name: TestCanFindPathInLargeGrids()
       fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathInLargeGrids()
       resultStatus: 1
-      duration: 0.6508613
+      duration: 0.5968595
       messages: 
       output: 
       stacktrace: 
@@ -751,7 +751,7 @@ MonoBehaviour:
       name: TestCanFindPathInSmallGrids
       fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathInSmallGrids
       resultStatus: 1
-      duration: 0.0064376
+      duration: 0.0057802
       messages: 
       output: 
       stacktrace: 
@@ -767,7 +767,7 @@ MonoBehaviour:
       name: TestCanFindPathInSmallGrids()
       fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathInSmallGrids()
       resultStatus: 1
-      duration: 0.0064376
+      duration: 0.0057802
       messages: 
       output: 
       stacktrace: 
@@ -784,7 +784,7 @@ MonoBehaviour:
       name: TestCanFindPathToItself
       fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathToItself
       resultStatus: 1
-      duration: 0.000516
+      duration: 0.0001811
       messages: 
       output: 
       stacktrace: 
@@ -800,7 +800,7 @@ MonoBehaviour:
       name: TestCanFindPathToItself()
       fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathToItself()
       resultStatus: 1
-      duration: 0.000516
+      duration: 0.0001811
       messages: 
       output: 
       stacktrace: 
@@ -817,7 +817,7 @@ MonoBehaviour:
       name: TestCanFindPathToNeighbors
       fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathToNeighbors
       resultStatus: 1
-      duration: 0.001941
+      duration: 0.0014207
       messages: 
       output: 
       stacktrace: 
@@ -833,7 +833,7 @@ MonoBehaviour:
       name: TestCanFindPathToNeighbors()
       fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathToNeighbors()
       resultStatus: 1
-      duration: 0.001941
+      duration: 0.0014207
       messages: 
       output: 
       stacktrace: 
@@ -850,7 +850,7 @@ MonoBehaviour:
       name: TestCanFindPathWhenGridHasBlockedNodes
       fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathWhenGridHasBlockedNodes
       resultStatus: 1
-      duration: 0.0008229
+      duration: 0.0002995
       messages: 
       output: 
       stacktrace: 
@@ -866,7 +866,7 @@ MonoBehaviour:
       name: TestCanFindPathWhenGridHasBlockedNodes()
       fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCanFindPathWhenGridHasBlockedNodes()
       resultStatus: 1
-      duration: 0.0008229
+      duration: 0.0002995
       messages: 
       output: 
       stacktrace: 
@@ -883,7 +883,7 @@ MonoBehaviour:
       name: TestCantFindImpossiblePaths
       fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCantFindImpossiblePaths
       resultStatus: 1
-      duration: 0.0006287
+      duration: 0.0001794
       messages: 
       output: 
       stacktrace: 
@@ -899,7 +899,7 @@ MonoBehaviour:
       name: TestCantFindImpossiblePaths()
       fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCantFindImpossiblePaths()
       resultStatus: 1
-      duration: 0.0006287
+      duration: 0.0001794
       messages: 
       output: 
       stacktrace: 
@@ -916,7 +916,7 @@ MonoBehaviour:
       name: TestCantFindPathFromBlockedNode
       fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCantFindPathFromBlockedNode
       resultStatus: 1
-      duration: 0.0006964
+      duration: 0.000165
       messages: 
       output: 
       stacktrace: 
@@ -932,7 +932,7 @@ MonoBehaviour:
       name: TestCantFindPathFromBlockedNode()
       fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCantFindPathFromBlockedNode()
       resultStatus: 1
-      duration: 0.0006964
+      duration: 0.000165
       messages: 
       output: 
       stacktrace: 
@@ -949,7 +949,7 @@ MonoBehaviour:
       name: TestCantFindPathToBlockedNode
       fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCantFindPathToBlockedNode
       resultStatus: 1
-      duration: 0.0005295
+      duration: 0.0001689
       messages: 
       output: 
       stacktrace: 
@@ -965,7 +965,7 @@ MonoBehaviour:
       name: TestCantFindPathToBlockedNode()
       fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCantFindPathToBlockedNode()
       resultStatus: 1
-      duration: 0.0005295
+      duration: 0.0001689
       messages: 
       output: 
       stacktrace: 
@@ -982,7 +982,7 @@ MonoBehaviour:
       name: TestCantPassThroughBlockedCorner
       fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCantPassThroughBlockedCorner
       resultStatus: 1
-      duration: 0.0006623
+      duration: 0.0001848
       messages: 
       output: 
       stacktrace: 
@@ -998,7 +998,7 @@ MonoBehaviour:
       name: TestCantPassThroughBlockedCorner()
       fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestCantPassThroughBlockedCorner()
       resultStatus: 1
-      duration: 0.0006623
+      duration: 0.0001848
       messages: 
       output: 
       stacktrace: 
@@ -1015,7 +1015,7 @@ MonoBehaviour:
       name: TestPathDontIncludeAnyBlockedNode
       fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestPathDontIncludeAnyBlockedNode
       resultStatus: 1
-      duration: 0.0013228
+      duration: 0.0002581
       messages: 
       output: 
       stacktrace: 
@@ -1031,7 +1031,7 @@ MonoBehaviour:
       name: TestPathDontIncludeAnyBlockedNode()
       fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestPathDontIncludeAnyBlockedNode()
       resultStatus: 1
-      duration: 0.0013228
+      duration: 0.0002581
       messages: 
       output: 
       stacktrace: 
@@ -1048,7 +1048,7 @@ MonoBehaviour:
       name: TestSetNavmeshStopsPathfindingProcess
       fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestSetNavmeshStopsPathfindingProcess
       resultStatus: 1
-      duration: 0.000562
+      duration: 0.0002018
       messages: 
       output: 
       stacktrace: 
@@ -1064,7 +1064,7 @@ MonoBehaviour:
       name: TestSetNavmeshStopsPathfindingProcess()
       fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestSetNavmeshStopsPathfindingProcess()
       resultStatus: 1
-      duration: 0.000562
+      duration: 0.0002018
       messages: 
       output: 
       stacktrace: 
@@ -1081,7 +1081,7 @@ MonoBehaviour:
       name: TestStopPathfindingSetsStatusToImpossible
       fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestStopPathfindingSetsStatusToImpossible
       resultStatus: 1
-      duration: 0.0006325
+      duration: 0.0002047
       messages: 
       output: 
       stacktrace: 
@@ -1097,7 +1097,7 @@ MonoBehaviour:
       name: TestStopPathfindingSetsStatusToImpossible()
       fullName: DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestStopPathfindingSetsStatusToImpossible()
       resultStatus: 1
-      duration: 0.0006325
+      duration: 0.0002047
       messages: 
       output: 
       stacktrace: 
@@ -1109,13 +1109,1167 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1005
       parentUniqueId: 'DQWorks.Tests.AI.Pathfinding.dll/DQWorks/Tests/AI/Pathfinding/PathfinderTests/[DQWorks.Tests.AI.Pathfinding][DQWorks.Tests.AI.Pathfinding.PathfinderTests.TestStopPathfindingSetsStatusToImpossible][suite]'
-    m_ResultText: Pathfinding2D (12 tests) (0,666s)
+    - id: 1088
+      uniqueId: '[DQWorks.Tests.AI.StateMachine.dll][suite]'
+      name: DQWorks.Tests.AI.StateMachine.dll
+      fullName: C:/Users/William/Workspace/Pathfinding2D/Library/ScriptAssemblies/DQWorks.Tests.AI.StateMachine.dll
+      resultStatus: 1
+      duration: 0.017691601
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1101
+      parentUniqueId: '[Pathfinding2D][suite]'
+    - id: 1089
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/[DQWorks][suite]'
+      name: DQWorks
+      fullName: DQWorks
+      resultStatus: 1
+      duration: 0.017691601
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1088
+      parentUniqueId: '[DQWorks.Tests.AI.StateMachine.dll][suite]'
+    - id: 1090
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/[Tests][suite]'
+      name: Tests
+      fullName: DQWorks.Tests
+      resultStatus: 1
+      duration: 0.017691601
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1089
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/[DQWorks][suite]'
+    - id: 1091
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/[AI][suite]'
+      name: AI
+      fullName: DQWorks.Tests.AI
+      resultStatus: 1
+      duration: 0.017691601
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1090
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/[Tests][suite]'
+    - id: 1092
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine][suite]'
+      name: StateMachine
+      fullName: DQWorks.Tests.AI.StateMachine
+      resultStatus: 1
+      duration: 0.017691601
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1091
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/[AI][suite]'
+    - id: 1031
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.PhysicsStateMachineTests][suite]'
+      name: PhysicsStateMachineTests
+      fullName: DQWorks.Tests.AI.StateMachine.PhysicsStateMachineTests
+      resultStatus: 1
+      duration: 0.0059842
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1092
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine][suite]'
+    - id: 1035
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/PhysicsStateMachineTests/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.PhysicsStateMachineTests.TestAssertInitializeMethodInvokesStateEnter][suite]'
+      name: TestAssertInitializeMethodInvokesStateEnter
+      fullName: DQWorks.Tests.AI.StateMachine.PhysicsStateMachineTests.TestAssertInitializeMethodInvokesStateEnter
+      resultStatus: 1
+      duration: 0.0006317
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1031
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.PhysicsStateMachineTests][suite]'
+    - id: 1034
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/PhysicsStateMachineTests/TestAssertInitializeMethodInvokesStateEnter/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.PhysicsStateMachineTests.TestAssertInitializeMethodInvokesStateEnter()]'
+      name: TestAssertInitializeMethodInvokesStateEnter()
+      fullName: DQWorks.Tests.AI.StateMachine.PhysicsStateMachineTests.TestAssertInitializeMethodInvokesStateEnter()
+      resultStatus: 1
+      duration: 0.0006317
+      messages: 
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1035
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/PhysicsStateMachineTests/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.PhysicsStateMachineTests.TestAssertInitializeMethodInvokesStateEnter][suite]'
+    - id: 1037
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/PhysicsStateMachineTests/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.PhysicsStateMachineTests.TestAssertStateMachinesInitialStateIsNull][suite]'
+      name: TestAssertStateMachinesInitialStateIsNull
+      fullName: DQWorks.Tests.AI.StateMachine.PhysicsStateMachineTests.TestAssertStateMachinesInitialStateIsNull
+      resultStatus: 1
+      duration: 0.0006362
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1031
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.PhysicsStateMachineTests][suite]'
+    - id: 1036
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/PhysicsStateMachineTests/TestAssertStateMachinesInitialStateIsNull/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.PhysicsStateMachineTests.TestAssertStateMachinesInitialStateIsNull()]'
+      name: TestAssertStateMachinesInitialStateIsNull()
+      fullName: DQWorks.Tests.AI.StateMachine.PhysicsStateMachineTests.TestAssertStateMachinesInitialStateIsNull()
+      resultStatus: 1
+      duration: 0.0006362
+      messages: 
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1037
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/PhysicsStateMachineTests/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.PhysicsStateMachineTests.TestAssertStateMachinesInitialStateIsNull][suite]'
+    - id: 1039
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/PhysicsStateMachineTests/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.PhysicsStateMachineTests.TestAssertTransitionChangesCurrentState][suite]'
+      name: TestAssertTransitionChangesCurrentState
+      fullName: DQWorks.Tests.AI.StateMachine.PhysicsStateMachineTests.TestAssertTransitionChangesCurrentState
+      resultStatus: 1
+      duration: 0.0006181
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1031
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.PhysicsStateMachineTests][suite]'
+    - id: 1038
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/PhysicsStateMachineTests/TestAssertTransitionChangesCurrentState/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.PhysicsStateMachineTests.TestAssertTransitionChangesCurrentState()]'
+      name: TestAssertTransitionChangesCurrentState()
+      fullName: DQWorks.Tests.AI.StateMachine.PhysicsStateMachineTests.TestAssertTransitionChangesCurrentState()
+      resultStatus: 1
+      duration: 0.0006181
+      messages: 
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1039
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/PhysicsStateMachineTests/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.PhysicsStateMachineTests.TestAssertTransitionChangesCurrentState][suite]'
+    - id: 1041
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/PhysicsStateMachineTests/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.PhysicsStateMachineTests.TestAssertTransitionMethodInvokesStateEnter][suite]'
+      name: TestAssertTransitionMethodInvokesStateEnter
+      fullName: DQWorks.Tests.AI.StateMachine.PhysicsStateMachineTests.TestAssertTransitionMethodInvokesStateEnter
+      resultStatus: 1
+      duration: 0.0006255
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1031
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.PhysicsStateMachineTests][suite]'
+    - id: 1040
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/PhysicsStateMachineTests/TestAssertTransitionMethodInvokesStateEnter/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.PhysicsStateMachineTests.TestAssertTransitionMethodInvokesStateEnter()]'
+      name: TestAssertTransitionMethodInvokesStateEnter()
+      fullName: DQWorks.Tests.AI.StateMachine.PhysicsStateMachineTests.TestAssertTransitionMethodInvokesStateEnter()
+      resultStatus: 1
+      duration: 0.0006255
+      messages: 
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1041
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/PhysicsStateMachineTests/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.PhysicsStateMachineTests.TestAssertTransitionMethodInvokesStateEnter][suite]'
+    - id: 1043
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/PhysicsStateMachineTests/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.PhysicsStateMachineTests.TestAssertTransitionMethodInvokesStateExit][suite]'
+      name: TestAssertTransitionMethodInvokesStateExit
+      fullName: DQWorks.Tests.AI.StateMachine.PhysicsStateMachineTests.TestAssertTransitionMethodInvokesStateExit
+      resultStatus: 1
+      duration: 0.000725
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1031
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.PhysicsStateMachineTests][suite]'
+    - id: 1042
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/PhysicsStateMachineTests/TestAssertTransitionMethodInvokesStateExit/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.PhysicsStateMachineTests.TestAssertTransitionMethodInvokesStateExit()]'
+      name: TestAssertTransitionMethodInvokesStateExit()
+      fullName: DQWorks.Tests.AI.StateMachine.PhysicsStateMachineTests.TestAssertTransitionMethodInvokesStateExit()
+      resultStatus: 1
+      duration: 0.000725
+      messages: 
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1043
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/PhysicsStateMachineTests/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.PhysicsStateMachineTests.TestAssertTransitionMethodInvokesStateExit][suite]'
+    - id: 1045
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/PhysicsStateMachineTests/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.PhysicsStateMachineTests.TestCantInitializeNull][suite]'
+      name: TestCantInitializeNull
+      fullName: DQWorks.Tests.AI.StateMachine.PhysicsStateMachineTests.TestCantInitializeNull
+      resultStatus: 1
+      duration: 0.000656
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1031
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.PhysicsStateMachineTests][suite]'
+    - id: 1044
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/PhysicsStateMachineTests/TestCantInitializeNull/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.PhysicsStateMachineTests.TestCantInitializeNull()]'
+      name: TestCantInitializeNull()
+      fullName: DQWorks.Tests.AI.StateMachine.PhysicsStateMachineTests.TestCantInitializeNull()
+      resultStatus: 1
+      duration: 0.000656
+      messages: 
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1045
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/PhysicsStateMachineTests/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.PhysicsStateMachineTests.TestCantInitializeNull][suite]'
+    - id: 1047
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/PhysicsStateMachineTests/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.PhysicsStateMachineTests.TestCanTransitionToCurrentState][suite]'
+      name: TestCanTransitionToCurrentState
+      fullName: DQWorks.Tests.AI.StateMachine.PhysicsStateMachineTests.TestCanTransitionToCurrentState
+      resultStatus: 1
+      duration: 0.0006307
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1031
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.PhysicsStateMachineTests][suite]'
+    - id: 1046
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/PhysicsStateMachineTests/TestCanTransitionToCurrentState/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.PhysicsStateMachineTests.TestCanTransitionToCurrentState()]'
+      name: TestCanTransitionToCurrentState()
+      fullName: DQWorks.Tests.AI.StateMachine.PhysicsStateMachineTests.TestCanTransitionToCurrentState()
+      resultStatus: 1
+      duration: 0.0006307
+      messages: 
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1047
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/PhysicsStateMachineTests/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.PhysicsStateMachineTests.TestCanTransitionToCurrentState][suite]'
+    - id: 1049
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/PhysicsStateMachineTests/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.PhysicsStateMachineTests.TestCantTransitionToNull][suite]'
+      name: TestCantTransitionToNull
+      fullName: DQWorks.Tests.AI.StateMachine.PhysicsStateMachineTests.TestCantTransitionToNull
+      resultStatus: 1
+      duration: 0.0007436
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1031
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.PhysicsStateMachineTests][suite]'
+    - id: 1048
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/PhysicsStateMachineTests/TestCantTransitionToNull/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.PhysicsStateMachineTests.TestCantTransitionToNull()]'
+      name: TestCantTransitionToNull()
+      fullName: DQWorks.Tests.AI.StateMachine.PhysicsStateMachineTests.TestCantTransitionToNull()
+      resultStatus: 1
+      duration: 0.0007436
+      messages: 
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1049
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/PhysicsStateMachineTests/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.PhysicsStateMachineTests.TestCantTransitionToNull][suite]'
+    - id: 1033
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/PhysicsStateMachineTests/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.PhysicsStateMachineTests.TestEqualityOfStateInstances][suite]'
+      name: TestEqualityOfStateInstances
+      fullName: DQWorks.Tests.AI.StateMachine.PhysicsStateMachineTests.TestEqualityOfStateInstances
+      resultStatus: 1
+      duration: 0.0007174
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1031
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.PhysicsStateMachineTests][suite]'
+    - id: 1032
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/PhysicsStateMachineTests/TestEqualityOfStateInstances/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.PhysicsStateMachineTests.TestEqualityOfStateInstances()]'
+      name: TestEqualityOfStateInstances()
+      fullName: DQWorks.Tests.AI.StateMachine.PhysicsStateMachineTests.TestEqualityOfStateInstances()
+      resultStatus: 1
+      duration: 0.0007174
+      messages: 
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1033
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/PhysicsStateMachineTests/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.PhysicsStateMachineTests.TestEqualityOfStateInstances][suite]'
+    - id: 1050
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.SimpleStateMachineTests][suite]'
+      name: SimpleStateMachineTests
+      fullName: DQWorks.Tests.AI.StateMachine.SimpleStateMachineTests
+      resultStatus: 1
+      duration: 0.005659
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1092
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine][suite]'
+    - id: 1054
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/SimpleStateMachineTests/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.SimpleStateMachineTests.TestAssertInitializeMethodInvokesStateEnter][suite]'
+      name: TestAssertInitializeMethodInvokesStateEnter
+      fullName: DQWorks.Tests.AI.StateMachine.SimpleStateMachineTests.TestAssertInitializeMethodInvokesStateEnter
+      resultStatus: 1
+      duration: 0.0006302
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1050
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.SimpleStateMachineTests][suite]'
+    - id: 1034
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/SimpleStateMachineTests/TestAssertInitializeMethodInvokesStateEnter/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.SimpleStateMachineTests.TestAssertInitializeMethodInvokesStateEnter()]'
+      name: TestAssertInitializeMethodInvokesStateEnter()
+      fullName: DQWorks.Tests.AI.StateMachine.SimpleStateMachineTests.TestAssertInitializeMethodInvokesStateEnter()
+      resultStatus: 1
+      duration: 0.0006302
+      messages: 
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1035
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/SimpleStateMachineTests/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.SimpleStateMachineTests.TestAssertInitializeMethodInvokesStateEnter][suite]'
+    - id: 1056
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/SimpleStateMachineTests/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.SimpleStateMachineTests.TestAssertStateMachinesInitialStateIsNull][suite]'
+      name: TestAssertStateMachinesInitialStateIsNull
+      fullName: DQWorks.Tests.AI.StateMachine.SimpleStateMachineTests.TestAssertStateMachinesInitialStateIsNull
+      resultStatus: 1
+      duration: 0.0006138
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1050
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.SimpleStateMachineTests][suite]'
+    - id: 1036
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/SimpleStateMachineTests/TestAssertStateMachinesInitialStateIsNull/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.SimpleStateMachineTests.TestAssertStateMachinesInitialStateIsNull()]'
+      name: TestAssertStateMachinesInitialStateIsNull()
+      fullName: DQWorks.Tests.AI.StateMachine.SimpleStateMachineTests.TestAssertStateMachinesInitialStateIsNull()
+      resultStatus: 1
+      duration: 0.0006138
+      messages: 
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1037
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/SimpleStateMachineTests/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.SimpleStateMachineTests.TestAssertStateMachinesInitialStateIsNull][suite]'
+    - id: 1058
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/SimpleStateMachineTests/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.SimpleStateMachineTests.TestAssertTransitionChangesCurrentState][suite]'
+      name: TestAssertTransitionChangesCurrentState
+      fullName: DQWorks.Tests.AI.StateMachine.SimpleStateMachineTests.TestAssertTransitionChangesCurrentState
+      resultStatus: 1
+      duration: 0.0006192
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1050
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.SimpleStateMachineTests][suite]'
+    - id: 1038
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/SimpleStateMachineTests/TestAssertTransitionChangesCurrentState/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.SimpleStateMachineTests.TestAssertTransitionChangesCurrentState()]'
+      name: TestAssertTransitionChangesCurrentState()
+      fullName: DQWorks.Tests.AI.StateMachine.SimpleStateMachineTests.TestAssertTransitionChangesCurrentState()
+      resultStatus: 1
+      duration: 0.0006192
+      messages: 
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1039
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/SimpleStateMachineTests/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.SimpleStateMachineTests.TestAssertTransitionChangesCurrentState][suite]'
+    - id: 1060
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/SimpleStateMachineTests/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.SimpleStateMachineTests.TestAssertTransitionMethodInvokesStateEnter][suite]'
+      name: TestAssertTransitionMethodInvokesStateEnter
+      fullName: DQWorks.Tests.AI.StateMachine.SimpleStateMachineTests.TestAssertTransitionMethodInvokesStateEnter
+      resultStatus: 1
+      duration: 0.0006177
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1050
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.SimpleStateMachineTests][suite]'
+    - id: 1040
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/SimpleStateMachineTests/TestAssertTransitionMethodInvokesStateEnter/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.SimpleStateMachineTests.TestAssertTransitionMethodInvokesStateEnter()]'
+      name: TestAssertTransitionMethodInvokesStateEnter()
+      fullName: DQWorks.Tests.AI.StateMachine.SimpleStateMachineTests.TestAssertTransitionMethodInvokesStateEnter()
+      resultStatus: 1
+      duration: 0.0006177
+      messages: 
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1041
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/SimpleStateMachineTests/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.SimpleStateMachineTests.TestAssertTransitionMethodInvokesStateEnter][suite]'
+    - id: 1062
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/SimpleStateMachineTests/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.SimpleStateMachineTests.TestAssertTransitionMethodInvokesStateExit][suite]'
+      name: TestAssertTransitionMethodInvokesStateExit
+      fullName: DQWorks.Tests.AI.StateMachine.SimpleStateMachineTests.TestAssertTransitionMethodInvokesStateExit
+      resultStatus: 1
+      duration: 0.0006245
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1050
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.SimpleStateMachineTests][suite]'
+    - id: 1042
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/SimpleStateMachineTests/TestAssertTransitionMethodInvokesStateExit/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.SimpleStateMachineTests.TestAssertTransitionMethodInvokesStateExit()]'
+      name: TestAssertTransitionMethodInvokesStateExit()
+      fullName: DQWorks.Tests.AI.StateMachine.SimpleStateMachineTests.TestAssertTransitionMethodInvokesStateExit()
+      resultStatus: 1
+      duration: 0.0006245
+      messages: 
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1043
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/SimpleStateMachineTests/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.SimpleStateMachineTests.TestAssertTransitionMethodInvokesStateExit][suite]'
+    - id: 1064
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/SimpleStateMachineTests/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.SimpleStateMachineTests.TestCantInitializeNull][suite]'
+      name: TestCantInitializeNull
+      fullName: DQWorks.Tests.AI.StateMachine.SimpleStateMachineTests.TestCantInitializeNull
+      resultStatus: 1
+      duration: 0.000637
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1050
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.SimpleStateMachineTests][suite]'
+    - id: 1044
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/SimpleStateMachineTests/TestCantInitializeNull/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.SimpleStateMachineTests.TestCantInitializeNull()]'
+      name: TestCantInitializeNull()
+      fullName: DQWorks.Tests.AI.StateMachine.SimpleStateMachineTests.TestCantInitializeNull()
+      resultStatus: 1
+      duration: 0.000637
+      messages: 
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1045
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/SimpleStateMachineTests/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.SimpleStateMachineTests.TestCantInitializeNull][suite]'
+    - id: 1066
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/SimpleStateMachineTests/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.SimpleStateMachineTests.TestCanTransitionToCurrentState][suite]'
+      name: TestCanTransitionToCurrentState
+      fullName: DQWorks.Tests.AI.StateMachine.SimpleStateMachineTests.TestCanTransitionToCurrentState
+      resultStatus: 1
+      duration: 0.0006317
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1050
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.SimpleStateMachineTests][suite]'
+    - id: 1046
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/SimpleStateMachineTests/TestCanTransitionToCurrentState/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.SimpleStateMachineTests.TestCanTransitionToCurrentState()]'
+      name: TestCanTransitionToCurrentState()
+      fullName: DQWorks.Tests.AI.StateMachine.SimpleStateMachineTests.TestCanTransitionToCurrentState()
+      resultStatus: 1
+      duration: 0.0006317
+      messages: 
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1047
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/SimpleStateMachineTests/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.SimpleStateMachineTests.TestCanTransitionToCurrentState][suite]'
+    - id: 1068
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/SimpleStateMachineTests/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.SimpleStateMachineTests.TestCantTransitionToNull][suite]'
+      name: TestCantTransitionToNull
+      fullName: DQWorks.Tests.AI.StateMachine.SimpleStateMachineTests.TestCantTransitionToNull
+      resultStatus: 1
+      duration: 0.0006438
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1050
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.SimpleStateMachineTests][suite]'
+    - id: 1048
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/SimpleStateMachineTests/TestCantTransitionToNull/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.SimpleStateMachineTests.TestCantTransitionToNull()]'
+      name: TestCantTransitionToNull()
+      fullName: DQWorks.Tests.AI.StateMachine.SimpleStateMachineTests.TestCantTransitionToNull()
+      resultStatus: 1
+      duration: 0.0006438
+      messages: 
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1049
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/SimpleStateMachineTests/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.SimpleStateMachineTests.TestCantTransitionToNull][suite]'
+    - id: 1052
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/SimpleStateMachineTests/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.SimpleStateMachineTests.TestEqualityOfStateInstances][suite]'
+      name: TestEqualityOfStateInstances
+      fullName: DQWorks.Tests.AI.StateMachine.SimpleStateMachineTests.TestEqualityOfStateInstances
+      resultStatus: 1
+      duration: 0.0006411
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1050
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.SimpleStateMachineTests][suite]'
+    - id: 1032
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/SimpleStateMachineTests/TestEqualityOfStateInstances/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.SimpleStateMachineTests.TestEqualityOfStateInstances()]'
+      name: TestEqualityOfStateInstances()
+      fullName: DQWorks.Tests.AI.StateMachine.SimpleStateMachineTests.TestEqualityOfStateInstances()
+      resultStatus: 1
+      duration: 0.0006411
+      messages: 
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1033
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/SimpleStateMachineTests/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.SimpleStateMachineTests.TestEqualityOfStateInstances][suite]'
+    - id: 1069
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.StateMachineTests][suite]'
+      name: StateMachineTests
+      fullName: DQWorks.Tests.AI.StateMachine.StateMachineTests
+      resultStatus: 1
+      duration: 0.0060484
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1092
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine][suite]'
+    - id: 1073
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/StateMachineTests/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.StateMachineTests.TestAssertInitializeMethodInvokesStateEnter][suite]'
+      name: TestAssertInitializeMethodInvokesStateEnter
+      fullName: DQWorks.Tests.AI.StateMachine.StateMachineTests.TestAssertInitializeMethodInvokesStateEnter
+      resultStatus: 1
+      duration: 0.0006605
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1069
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.StateMachineTests][suite]'
+    - id: 1034
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/StateMachineTests/TestAssertInitializeMethodInvokesStateEnter/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.StateMachineTests.TestAssertInitializeMethodInvokesStateEnter()]'
+      name: TestAssertInitializeMethodInvokesStateEnter()
+      fullName: DQWorks.Tests.AI.StateMachine.StateMachineTests.TestAssertInitializeMethodInvokesStateEnter()
+      resultStatus: 1
+      duration: 0.0006605
+      messages: 
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1035
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/StateMachineTests/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.StateMachineTests.TestAssertInitializeMethodInvokesStateEnter][suite]'
+    - id: 1075
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/StateMachineTests/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.StateMachineTests.TestAssertStateMachinesInitialStateIsNull][suite]'
+      name: TestAssertStateMachinesInitialStateIsNull
+      fullName: DQWorks.Tests.AI.StateMachine.StateMachineTests.TestAssertStateMachinesInitialStateIsNull
+      resultStatus: 1
+      duration: 0.0006188
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1069
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.StateMachineTests][suite]'
+    - id: 1036
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/StateMachineTests/TestAssertStateMachinesInitialStateIsNull/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.StateMachineTests.TestAssertStateMachinesInitialStateIsNull()]'
+      name: TestAssertStateMachinesInitialStateIsNull()
+      fullName: DQWorks.Tests.AI.StateMachine.StateMachineTests.TestAssertStateMachinesInitialStateIsNull()
+      resultStatus: 1
+      duration: 0.0006188
+      messages: 
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1037
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/StateMachineTests/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.StateMachineTests.TestAssertStateMachinesInitialStateIsNull][suite]'
+    - id: 1077
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/StateMachineTests/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.StateMachineTests.TestAssertTransitionChangesCurrentState][suite]'
+      name: TestAssertTransitionChangesCurrentState
+      fullName: DQWorks.Tests.AI.StateMachine.StateMachineTests.TestAssertTransitionChangesCurrentState
+      resultStatus: 1
+      duration: 0.0006156
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1069
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.StateMachineTests][suite]'
+    - id: 1038
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/StateMachineTests/TestAssertTransitionChangesCurrentState/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.StateMachineTests.TestAssertTransitionChangesCurrentState()]'
+      name: TestAssertTransitionChangesCurrentState()
+      fullName: DQWorks.Tests.AI.StateMachine.StateMachineTests.TestAssertTransitionChangesCurrentState()
+      resultStatus: 1
+      duration: 0.0006156
+      messages: 
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1039
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/StateMachineTests/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.StateMachineTests.TestAssertTransitionChangesCurrentState][suite]'
+    - id: 1079
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/StateMachineTests/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.StateMachineTests.TestAssertTransitionMethodInvokesStateEnter][suite]'
+      name: TestAssertTransitionMethodInvokesStateEnter
+      fullName: DQWorks.Tests.AI.StateMachine.StateMachineTests.TestAssertTransitionMethodInvokesStateEnter
+      resultStatus: 1
+      duration: 0.0006245
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1069
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.StateMachineTests][suite]'
+    - id: 1040
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/StateMachineTests/TestAssertTransitionMethodInvokesStateEnter/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.StateMachineTests.TestAssertTransitionMethodInvokesStateEnter()]'
+      name: TestAssertTransitionMethodInvokesStateEnter()
+      fullName: DQWorks.Tests.AI.StateMachine.StateMachineTests.TestAssertTransitionMethodInvokesStateEnter()
+      resultStatus: 1
+      duration: 0.0006245
+      messages: 
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1041
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/StateMachineTests/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.StateMachineTests.TestAssertTransitionMethodInvokesStateEnter][suite]'
+    - id: 1081
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/StateMachineTests/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.StateMachineTests.TestAssertTransitionMethodInvokesStateExit][suite]'
+      name: TestAssertTransitionMethodInvokesStateExit
+      fullName: DQWorks.Tests.AI.StateMachine.StateMachineTests.TestAssertTransitionMethodInvokesStateExit
+      resultStatus: 1
+      duration: 0.000633
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1069
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.StateMachineTests][suite]'
+    - id: 1042
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/StateMachineTests/TestAssertTransitionMethodInvokesStateExit/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.StateMachineTests.TestAssertTransitionMethodInvokesStateExit()]'
+      name: TestAssertTransitionMethodInvokesStateExit()
+      fullName: DQWorks.Tests.AI.StateMachine.StateMachineTests.TestAssertTransitionMethodInvokesStateExit()
+      resultStatus: 1
+      duration: 0.000633
+      messages: 
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1043
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/StateMachineTests/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.StateMachineTests.TestAssertTransitionMethodInvokesStateExit][suite]'
+    - id: 1083
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/StateMachineTests/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.StateMachineTests.TestCantInitializeNull][suite]'
+      name: TestCantInitializeNull
+      fullName: DQWorks.Tests.AI.StateMachine.StateMachineTests.TestCantInitializeNull
+      resultStatus: 1
+      duration: 0.0006583
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1069
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.StateMachineTests][suite]'
+    - id: 1044
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/StateMachineTests/TestCantInitializeNull/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.StateMachineTests.TestCantInitializeNull()]'
+      name: TestCantInitializeNull()
+      fullName: DQWorks.Tests.AI.StateMachine.StateMachineTests.TestCantInitializeNull()
+      resultStatus: 1
+      duration: 0.0006583
+      messages: 
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1045
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/StateMachineTests/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.StateMachineTests.TestCantInitializeNull][suite]'
+    - id: 1085
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/StateMachineTests/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.StateMachineTests.TestCanTransitionToCurrentState][suite]'
+      name: TestCanTransitionToCurrentState
+      fullName: DQWorks.Tests.AI.StateMachine.StateMachineTests.TestCanTransitionToCurrentState
+      resultStatus: 1
+      duration: 0.0007924
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1069
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.StateMachineTests][suite]'
+    - id: 1046
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/StateMachineTests/TestCanTransitionToCurrentState/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.StateMachineTests.TestCanTransitionToCurrentState()]'
+      name: TestCanTransitionToCurrentState()
+      fullName: DQWorks.Tests.AI.StateMachine.StateMachineTests.TestCanTransitionToCurrentState()
+      resultStatus: 1
+      duration: 0.0007924
+      messages: 
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1047
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/StateMachineTests/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.StateMachineTests.TestCanTransitionToCurrentState][suite]'
+    - id: 1087
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/StateMachineTests/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.StateMachineTests.TestCantTransitionToNull][suite]'
+      name: TestCantTransitionToNull
+      fullName: DQWorks.Tests.AI.StateMachine.StateMachineTests.TestCantTransitionToNull
+      resultStatus: 1
+      duration: 0.0007353
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1069
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.StateMachineTests][suite]'
+    - id: 1048
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/StateMachineTests/TestCantTransitionToNull/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.StateMachineTests.TestCantTransitionToNull()]'
+      name: TestCantTransitionToNull()
+      fullName: DQWorks.Tests.AI.StateMachine.StateMachineTests.TestCantTransitionToNull()
+      resultStatus: 1
+      duration: 0.0007353
+      messages: 
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1049
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/StateMachineTests/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.StateMachineTests.TestCantTransitionToNull][suite]'
+    - id: 1071
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/StateMachineTests/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.StateMachineTests.TestEqualityOfStateInstances][suite]'
+      name: TestEqualityOfStateInstances
+      fullName: DQWorks.Tests.AI.StateMachine.StateMachineTests.TestEqualityOfStateInstances
+      resultStatus: 1
+      duration: 0.00071
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1069
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.StateMachineTests][suite]'
+    - id: 1032
+      uniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/StateMachineTests/TestEqualityOfStateInstances/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.StateMachineTests.TestEqualityOfStateInstances()]'
+      name: TestEqualityOfStateInstances()
+      fullName: DQWorks.Tests.AI.StateMachine.StateMachineTests.TestEqualityOfStateInstances()
+      resultStatus: 1
+      duration: 0.00071
+      messages: 
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1033
+      parentUniqueId: 'DQWorks.Tests.AI.StateMachine.dll/DQWorks/Tests/AI/StateMachine/StateMachineTests/[DQWorks.Tests.AI.StateMachine][DQWorks.Tests.AI.StateMachine.StateMachineTests.TestEqualityOfStateInstances][suite]'
+    m_ResultText: Pathfinding2D (39 tests) (0,624s)
     m_ResultStacktrace: 
     m_TestListState:
-      scrollPos: {x: 0, y: 120}
+      scrollPos: {x: 0, y: 0}
       m_SelectedIDs: d843a30d
       m_LastClickedID: 228803544
-      m_ExpandedIDs: 8402b691216627992a175dc332119ac5682de9cbcadba5d9415e94eeef6c9af8b4aaa1f8c01bf2f829beac016071ea01a9796f055857e00bd843a30de0b50812805551219ba07a316d19ba325cdd903370e1e23da9779b4844ff6c4ca4e4dd6e0f26126ff16d4878da88277dffffff7f
+      m_ExpandedIDs: e88ec68a68ac378d8402b691216627992a175dc332119ac5682de9cbcadba5d91102eae8415e94eeef6c9af8b4aaa1f8c01bf2f829beac016071ea014e6dd204a9796f052fe6a80a5857e00bd843a30de0b50812805551219ba07a316d19ba3270e1e23d4c0219460a9afc47a9779b4844ff6c4ca4e4dd6e0f26126f6209cc75f16d4878da88277dffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1145,7 +2299,7 @@ MonoBehaviour:
     m_SelectedOption: 0
   - m_Window: {fileID: 17}
     runProgress:
-      RunGuid: bb54bbd0-7917-4130-aee2-28426d09fc0e
+      RunGuid: 5fe50062-519c-4008-85e0-9e24a6f24d1b
       ExecutionSettings:
         m_TargetPlatform: 0
         m_HasTargetPlatform: 0
@@ -1173,7 +2327,7 @@ MonoBehaviour:
           disableNestedEnumeratorBugfix: 0
         randomOrderSeed: 0
       HasFinished: 1
-      Progress: 0.99999976
+      Progress: 0.9999994
       CurrentStepName: Unlock Reload Assemblies
       CurrentStageName: 
     m_NewResultList:
@@ -1810,7 +2964,7 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 44744
+  m_LastSelectedObjectID: 44748
 --- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1832,10 +2986,10 @@ MonoBehaviour:
     m_TextWithWhitespace: "Inspector\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 457
+    x: 460
     y: 24
-    width: 493
-    height: 393
+    width: 498
+    height: 400
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1883,8 +3037,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1
     y: 24
-    width: 454
-    height: 480
+    width: 457
+    height: 489
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1906,8 +3060,7 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SkipHidden: 0
     m_SearchArea: 1
-    m_Folders:
-    - Assets/Scripts/AI/StateMachine/Interfaces
+    m_Folders: []
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1926,7 +3079,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: e4b00000
     m_LastClickedID: 45284
-    m_ExpandedIDs: 0000000020af000022af000024af000026af000028af00002aaf00002caf00002eaf000030af000032af000034af0000
+    m_ExpandedIDs: 0000000030af000032af000034af000036af000038af00003aaf00003caf00003eaf000040af000042af000044af000046af000048af0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1955,7 +3108,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000020af000022af000024af000026af000028af00002aaf00002caf00002eaf000030af000032af000034af0000
+    m_ExpandedIDs: 0000000030af000032af000034af000036af000038af00003aaf00003caf00003eaf000040af000042af000044af000046af000048af0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2036,8 +3189,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 24
-    width: 953
-    height: 451
+    width: 961
+    height: 460
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -2091,23 +3244,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 953
-      height: 430
-    m_Scale: {x: 0.4427855, y: 0.4427855}
-    m_Translation: {x: 476.5, y: 213.8066}
+      width: 961
+      height: 439
+    m_Scale: {x: 0.44278547, y: 0.4427855}
+    m_Translation: {x: 480.50003, y: 218.3066}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -1076.1418
-      y: -482.8672
-      width: 2152.2837
-      height: 971.1248
+      x: -1085.1757
+      y: -493.03012
+      width: 2170.3513
+      height: 991.4507
     m_MinimalGUI: 1
-  m_defaultScale: 0.39814815
-  m_LastWindowPixelSize: {x: 953, y: 451}
+  m_defaultScale: 0.40648147
+  m_LastWindowPixelSize: {x: 961, y: 460}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -2136,9 +3289,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 501
-    width: 953
-    height: 422
+    y: 510
+    width: 961
+    height: 429
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -2690,10 +3843,10 @@ MonoBehaviour:
     m_TextWithWhitespace: "Hierarchy\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 457
+    x: 460
     y: 24
-    width: 493
-    height: 480
+    width: 498
+    height: 489
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -2710,7 +3863,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: d0d9ffff0cfbffff
+      m_ExpandedIDs: 4afdfeffd001ffff6a06ffff4c21ffff763cffff9e40ffff4248ffff6a4cffff8a52ffffb858ffff6473ffff087dffff1283ffff3487ffff5c8bffffe2a9fffff0bcffff44ccfffffcdcffff66e4ffff8ee8ffff92eeffffb2f2ffff0cfbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -2727,7 +3880,7 @@ MonoBehaviour:
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_TrimLeadingAndTrailingWhitespace: 0
-        m_ClientGUIView: {fileID: 6}
+        m_ClientGUIView: {fileID: 8}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
